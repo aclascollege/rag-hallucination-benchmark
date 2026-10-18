@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "RAG Hallucination Benchmark for Teaching Knowledge Bases"
+authors:
+  - name: "Atlanta College of Liberal Arts and Sciences"
+message: "If you use this benchmark, please cite it as below."
+version: 1.0.0
+date-released: 2026-10-19
+license: CC-BY-4.0
+doi: 10.5281/zenodo.23460549
+url: "https://aclas.si/data/rag-hallucination-benchmark"
+repository-code: "https://github.com/aclascollege/rag-hallucination-benchmark"

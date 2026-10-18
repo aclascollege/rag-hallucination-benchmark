@@ -1,0 +1,322 @@
+[
+ {
+  "id": "ai-policy-audit-2026/README.md#0",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "# Global University AI Policy Audit 2026 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college) An open dataset of **186 audit records** covering whether universities publish official guidance on student/staff use of generative AI. Compiled 2026-10-14 by Study Intelligence (aclas.si) as research for *The Second Printing Press: Higher Education for the Intelligence Age*. > **Also on Kaggle:** [aclascollege/ai-policy-audit-2026](https://www.kaggle.com/datasets/aclascollege/ai-policy-audit-2026) — download the CSV without git, or fork it straight into a notebook. ## In plain English **What is this?** A spreadsheet answering one question for 186 universities worldwide: *does this school officially tell students and staff how they're allowed to use AI (like ChatGPT)?* We checked each university's own website, page by page."
+ },
+ {
+  "id": "ai-policy-audit-2026/README.md#1",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "**Why does it matter?** If you're a student, it tells you whether your school has clear AI rules or is making it up as it goes. If you're a teacher or policymaker, it shows the global norm: almost nobody bans AI outright — instead, teachers set the rules per course and students must disclose AI use. **The one chart that matters:** Rich universities are far more likely to have AI rules (92% of the top 50) than universities in the Global South (46%). The AI policy gap *is* the wealth gap. ## Try it (30 seconds) ## FAQ **I'm a journalist. What's the headline?** \"Not one of the world's top-100 universities bans AI campus-wide. The debate about banning AI on campus is, empirically, over.\" **I'm a student. How do I use this?** Find your school's row, open the `policy_url`, and read what it actually allows. Rules differ wildly."
+ },
+ {
+  "id": "ai-policy-audit-2026/README.md#2",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "**Can I trust a single row?** It's a snapshot from 2026-10-14 — policies change. 15 schools appear twice (flagged `name_overlap`); rows marked `UNCLEAR` mean \"we couldn't verify\", not \"no policy\". **How do I cite it?** See `CITATION.cff`, or: Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence (aclas.si), 2026, CC-BY-4.0. ## Headline numbers | Sample | Rows | Published AI policy (YES) | No policy (NO) | Unclear | |---|---|---|---|---| | QS 2026 ranks 1–50 | 50 | 46 (92%) | 1 | 3 | | QS 2026 ranks 51–100 | 49 | 43 | 0 | 6 | | QS 2026 ranks 101–150 | 50 | 38 | 6 | 6 | | Global South flagships | 37 | 17 (46%) | 17 | 3 | | **Total** | **186** | **144 (77%)** | **24** | **18** |"
+ },
+ {
+  "id": "ai-policy-audit-2026/README.md#3",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "Key finding: **not one of the top-100 universities imposes a campus-wide AI ban.** The global norm is delegated permission — instructors set per-course AI rules, students disclose AI use. The policy gap maps onto the wealth gap: 92% of the top 50 publish guidance vs 46% of Global South flagships. ## Files | File | Format | Description | |---|---|---| | `ai-policy-audit-2026.csv` | CSV (UTF-8) | 186 rows, 14 columns | | `ai-policy-audit-2026.json` | JSON | Same data + dataset metadata | | `METHODOLOGY.md` | Markdown | How the audit was conducted, definitions, caveats | | `parse.py` | Python 3 | The exact script that generated CSV/JSON from the raw audit tables | | `CITATION.cff` | CFF | Machine-readable citation | ## Columns"
+ },
+ {
+  "id": "ai-policy-audit-2026/README.md#4",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "| Column | Description | |---|---| | `id` | Stable row id, e.g. `qs-14`, `gs-10` (`-2` suffix where QS ranks tie) | | `sample` | `qs_top_50` / `qs_51_100` / `qs_101_150` / `global_south` | | `rank` | QS 2026 rank as printed in source (`=17` = tied rank); null for Global South | | `university` | Institution name | | `country` | Country (Global South sample only) | | `official_domain` | University's official domain (QS samples only) | | `has_policy` | `YES` / `NO` / `UNCLEAR` | | `policy_url` | First URL found in the source cell (null when none) | | `policy_url_raw` | Original cell text when it contained more than just the URL | | `page_title` | Title of the policy page | | `date_info` | Date / last-updated as shown on the page (often \"Not shown\") | | `scope` | Who the policy covers, e.g. `student-facing / exams-integrity` | | `note` | Auditor's one-line note | | `name_overlap` | `true` for the 30 rows (15 universities) audited in more than one sample | ## Honest notes on the numbers"
+ },
+ {
+  "id": "ai-policy-audit-2026/README.md#5",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "- The published summary said \"187 universities\". The source tables contain **186 data rows** covering **171 unique university names** — 15 names appear in two samples (the rank-band files overlap: e.g. TU Delft at QS 47 and QS 61). Rows are kept as audited; `name_overlap` flags them. Deduplicate on `university` if you need institution-level counts. - `UNCLEAR` (18) means \"could not verify\", not \"confirmed absent\" — dead links, portal-gated intranets and non-English sites are the main causes. True adoption is likely higher than 77%. - ~5 of the Global South YES cases are faculty/school-level rather than university-wide. - Snapshot date: **2026-10-14**. Policies are being published monthly; treat as a snapshot, not a live registry. Contributions and corrections welcome via issues/PRs. ## License [CC-BY-4.0](LICENSE) — use it, build on it, just cite it. ## Citation See `CITATION.cff` for the machine-readable version."
+ },
+ {
+  "id": "ai-policy-audit-2026/README.md#6",
+  "source": "ai-policy-audit-2026/README.md",
+  "text": "--- Published by the **Atlanta College of Liberal Arts and Sciences (ACLAS)** as part of [Study Intelligence](https://aclas.si), an open research program on AI and higher education."
+ },
+ {
+  "id": "ai-policy-audit-2026/METHODOLOGY.md#0",
+  "source": "ai-policy-audit-2026/METHODOLOGY.md",
+  "text": "# Methodology — Global University AI Policy Audit 2026 Audit date: **2026-10-14**. Snapshot, not a live registry. ## What was counted **YES** = a page on the university's **own official domain** containing guidance or policy on AI use (students, teaching, research, or all-community). Generic academic-integrity pages that never mention AI do **not** count. **NO** = searched in English (+ local language for non-English countries) and found no such page. **UNCLEAR** = could not verify — dead links, portal-gated intranets, crawler-blocked domains (e.g. ui.ac.id), or insufficient evidence either way. ## How each record was verified Web search + direct verification: each policy URL below was opened and confirmed to load AI usage guidance on 2026-10-14, or corroborated by search-engine crawl of the official page plus the MDPI April 2026 systematic audit of top-200 universities' GenAI guidelines where direct fetch failed."
+ },
+ {
+  "id": "ai-policy-audit-2026/METHODOLOGY.md#1",
+  "source": "ai-policy-audit-2026/METHODOLOGY.md",
+  "text": "Searches ran in English + local languages (German, French, Chinese, Japanese, Korean, Spanish, Portuguese, Arabic, Indonesian, Thai, Vietnamese). This matters: continental European and East Asian universities often publish first in the national language, and English-only surveys systematically undercount them. ## Samples - **QS 2026 ranks 1–50** (50 rows), **51–100** (49 rows), **101–150** (50 rows): every ranked institution checked in order. - **Global South flagships** (37 rows): flagship universities across Brazil, Argentina, Egypt, Nigeria, Kenya, South Africa, India, Pakistan, Bangladesh, Indonesia, Philippines, Vietnam, Thailand, Malaysia, Mexico, Chile, China. ## Known limitations (read before citing)"
+ },
+ {
+  "id": "ai-policy-audit-2026/METHODOLOGY.md#2",
+  "source": "ai-policy-audit-2026/METHODOLOGY.md",
+  "text": "1. 15 university names appear in two samples (30 rows flagged `name_overlap`) — the rank-band files overlap (e.g. TU Delft listed at QS 47 and QS 61). Institution-level counts should deduplicate on `university`. 2. ~5 Global South YES cases are faculty/school-level, not university-wide. 3. Last-updated dates are inconsistently displayed by universities; \"issued in the last 12 months\" is approximate. 4. Two secondary-literature errors were caught and excluded during the audit (a paper conflating Quinnipiac's catalog with Qatar University; a micro-credential page cited as a \"policy\"). 5. Policies are being published monthly — verify before citing any single row for a current claim. ## Reproducibility `parse.py` in this directory is the exact script that generated the CSV/JSON from the raw audit tables. Raw tables: `~/workspace/aclas-report/ai-policy-audit/` (`qs-001-050.md`, `qs-051-100.md`, `qs-101-150.md`, `global-south-35.md`). Corrections welcome via issues or pull requests."
+ },
+ {
+  "id": "ai-policy-audit-2026/llms.txt#0",
+  "source": "ai-policy-audit-2026/llms.txt",
+  "text": "# Global University AI Policy Audit 2026 > Open dataset: 186 audit records of whether universities publish official > guidance on generative AI use. By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) (https://aclas.si). > License: CC-BY-4.0. Snapshot: 2026-10-14. ## What question does this answer? Do universities publish official, public guidance on student/staff use of generative AI? Each row was verified by opening a page on the university's own official domain. ## Key findings - 144 of 186 (77%) publish verifiable AI guidance; 24 confirmed none; 18 unclear. - Top-50 universities: 92% publish guidance. Global South flagships: 46%. - Zero campus-wide AI bans in the top 100. The global norm is delegated permission (instructors set per-course rules) plus mandatory disclosure. - The policy gap maps onto the wealth gap. ## Files"
+ },
+ {
+  "id": "ai-policy-audit-2026/llms.txt#1",
+  "source": "ai-policy-audit-2026/llms.txt",
+  "text": "- `ai-policy-audit-2026.csv` — 186 rows, 14 columns (UTF-8) - `ai-policy-audit-2026.json` — same data plus dataset metadata - `METHODOLOGY.md` — audit method, definitions, caveats - `parse.py` — exact script that generated CSV/JSON - `CITATION.cff` — machine-readable citation ## Columns (CSV) `id`, `sample` (qs_top_50 / qs_51_100 / qs_101_150 / global_south), `rank` (QS 2026), `university`, `country`, `has_policy` (YES / NO / UNCLEAR), `policy_url`, `page_title`, `date_info`, `scope`, `note`, plus overlap flags. ## Caveats - 15 universities appear in two samples (flagged `name_overlap`); deduplicate on `university` for institution-level counts (171 unique). - UNCLEAR means \"could not verify\", not \"confirmed absent\". - Snapshot 2026-10-14; policies change — verify before citing a single row. ## Citation Study Intelligence (https://aclas.si). \"Global University AI Policy Audit 2026\" (v1.0.0, 2026-10-14). CC-BY-4.0."
+ },
+ {
+  "id": "ai-policy-audit-2026/CHANGELOG.md#0",
+  "source": "ai-policy-audit-2026/CHANGELOG.md",
+  "text": "# Changelog ## v1.0.0 — 2026-10-18 - Initial open data release (CC-BY-4.0)."
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/README.md#0",
+  "source": "central-asia-ai-education-audit-2026/README.md",
+  "text": "# Central Asia AI Education Audit 2026 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college) An open dataset of **31 leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan**, audited on two questions: (a) does it publish a public, university-level AI usage policy? (b) what AI-related degree programs or courses does it offer? > **Also on Kaggle:** [aclascollege/central-asia-ai-education-audit-2026](https://www.kaggle.com/datasets/aclascollege/central-asia-ai-education-audit-2026) — download the CSV without git, or fork it straight into a notebook. ## In plain English **What is this?** A report card for 31 leading universities in Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan on two questions: *do they publish AI rules?* and *do they teach AI?* **The headline:**"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/README.md#1",
+  "source": "central-asia-ai-education-audit-2026/README.md",
+  "text": "Schools are teaching AI **three times faster** than they're writing rules for it (58% offer AI programs vs 19% with a policy). And four of the six schools *with* policies are in Kazakhstan — Turkmenistan and Tajikistan are near-complete blind spots. ## Try it (30 seconds) ## FAQ **Why Central Asia?** It's the least-measured region in global AI-education research. English-only surveys systematically miss it — this audit searched in Russian and local languages too. **What does UNVERIFIABLE mean?** We couldn't confirm a policy on the public web — often because sites are down, login-walled, or crawler-blocked. It's a finding about *transparency*, not just adoption. ## Headline numbers"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/README.md#2",
+  "source": "central-asia-ai-education-audit-2026/README.md",
+  "text": "- **6 of 31 (19%)** publish a verifiable public AI usage policy on their official domain — 4 of the 6 are Kazakh, backed by a 2024 inter-university AI standard and a 2025 ministry position against AI bans. - **18 of 31 (58%)** offer a verifiable AI-named degree program or AI course portfolio — institutions are teaching AI ~3× faster than they govern its use. - **Zero** campus-wide AI bans. Every verified policy follows the global norm of *delegated permission plus mandatory disclosure*. - **Turkmenistan and Tajikistan are near-complete blind spots:** 0 of 7 sampled universities publish a verifiable policy. - The **UNVERIFIABLE rate (81%) is the highest of any region measured** — a finding about transparency and discoverability as much as about adoption. ## Files"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/README.md#3",
+  "source": "central-asia-ai-education-audit-2026/README.md",
+  "text": "| File | Description | |---|---| | `central-asia-ai-policies-2026.csv` / `.json` | 31 rows: AI policy per university | | `central-asia-ai-programs-2026.csv` | 31 rows: verified AI programs/courses per university | | `central-asia-ai-education-audit-2026.json` | Both tables + metadata | | `METHODOLOGY.md` | Sample selection, definitions, caveats | | `parse.py` | Exact script that generated CSV/JSON from the raw audit tables | ## Columns — policies `id`, `country_code` (KZ/KG/UZ/TJ/TM), `university`, `has_policy` (`YES`/`UNVERIFIABLE` — no confirmed-NO cases in this sample; unverifiable means not found, not proven absent), `policy_url`, `policy_url_raw`, `note`. ## Columns — programs `id`, `university`, `ai_programs` (verified AI-named programs/courses), `source_url`, `source_url_raw`. ## Notes"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/README.md#4",
+  "source": "central-asia-ai-education-audit-2026/README.md",
+  "text": "- Snapshot date: **2026-10-17**. QAIRU (Qazaq AI Research University, Central Asia's first purpose-built AI university) enrolled its first 528 students in September 2026 — included where verifiable. - Corrections welcome via issues/PRs. ## License [CC-BY-4.0](LICENSE) — cite \"Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence (aclas.si)\". --- Published by the **Atlanta College of Liberal Arts and Sciences (ACLAS)** as part of [Study Intelligence](https://aclas.si), an open research program on AI and higher education. ## Citation"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+  "source": "central-asia-ai-education-audit-2026/METHODOLOGY.md",
+  "text": "# Methodology — Central Asia AI Education Audit 2026 Audit date: **2026-10-17**. Snapshot. ## Sample 31 leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan — national flagships and highest-ranked institutions (Webometrics / regional standing), i.e. the institutions a policy survey must not miss. ## What was counted Two questions per university: (a) **AI policy**: does it publish a public, university-level AI usage policy for students/teaching staff (academic integrity or teaching guidance mentioning generative AI) on its official domain? `YES` requires the document to exist and be retrievable. `UNVERIFIABLE` = not found / not retrievable — not proven absent. (b) **AI programs**: AI-named degree programs or AI course portfolios verifiable on the official domain. Searches ran in English + Russian + national languages. All source access dates recorded per claim in the audit notes. ## Caveats"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/METHODOLOGY.md#1",
+  "source": "central-asia-ai-education-audit-2026/METHODOLOGY.md",
+  "text": "- The UNVERIFIABLE rate (81%) is the highest measured in any region — partly a transparency/discoverability finding, not pure non-adoption. Turkmenistan's institutional web is largely closed. - Policies are being published monthly; verify before citing a single row. ## Reproducibility `parse.py` generated the CSV/JSON from the raw audit tables. Raw report: `~/workspace/aclas-kg-seo/research/central-asia-ai-education-audit-2026.md`."
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/llms.txt#0",
+  "source": "central-asia-ai-education-audit-2026/llms.txt",
+  "text": "# Central Asia AI Education Audit 2026 > Open dataset: 31 leading universities across Kazakhstan, Kyrgyzstan, > Uzbekistan, Tajikistan and Turkmenistan, audited for (a) public AI usage > policy and (b) AI degree programs/courses offered. --- > By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) — https://aclas.si. License: CC-BY-4.0. > Snapshot: 2026-10-14. ## What questions does this answer? 1. Does the university publish a public, university-level AI usage policy? 2. What AI-related degree programs or courses does it verifiably offer? ## Key findings - 6 of 31 (19%) publish a verifiable public AI policy — 4 of 6 are Kazakh. - 18 of 31 (58%) offer a verifiable AI-named degree program or AI course portfolio: institutions teach AI ~3x faster than they govern it. - Zero campus-wide AI bans. - Turkmenistan and Tajikistan are near-complete blind spots (0 of 7). - 81% UNVERIFIABLE rate — a finding about transparency as much as adoption. ## Files"
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/llms.txt#1",
+  "source": "central-asia-ai-education-audit-2026/llms.txt",
+  "text": "- `central-asia-ai-policies-2026.csv` — 31 rows: AI policy per university - `central-asia-ai-programs-2026.csv` — 31 rows: AI programs/courses - `central-asia-ai-education-audit-2026.json` — both tables + metadata - `METHODOLOGY.md` — sample selection, definitions, caveats - `parse.py` — exact script that generated CSV/JSON - `CITATION.cff` — machine-readable citation ## Citation Study Intelligence (https://aclas.si). \"Central Asia AI Education Audit 2026\" (v1.0.0, 2026-10-14). CC-BY-4.0."
+ },
+ {
+  "id": "central-asia-ai-education-audit-2026/CHANGELOG.md#0",
+  "source": "central-asia-ai-education-audit-2026/CHANGELOG.md",
+  "text": "# Changelog ## v1.0.0 — 2026-10-18 - Initial open data release (CC-BY-4.0)."
+ },
+ {
+  "id": "online-degree-tuition-2026/README.md#0",
+  "source": "online-degree-tuition-2026/README.md",
+  "text": "# Online Degree Tuition 2026 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college) An open dataset of **740 online degree programs at 537 U.S. institutions**, with tuition verified against each university's official website. Built for the cheapest-online-degrees tool (aclas.edu.gr) and released here as open data. > **Also on Kaggle:** [aclascollege/online-degree-tuition-2026](https://www.kaggle.com/datasets/aclascollege/online-degree-tuition-2026) — download the CSV without git, or fork it straight into a notebook. ## In plain English **What is this?** The price tag for 740 online degrees at 537 US schools — every number checked against the university's own official website. If you've ever wondered \"what does an online MBA *actually* cost?\", this is the answer, in a spreadsheet. **The picture:**"
+ },
+ {
+  "id": "online-degree-tuition-2026/README.md#1",
+  "source": "online-degree-tuition-2026/README.md",
+  "text": "A master's in computer science (median $26k) costs roughly *half* a bachelor's (median $50k). Online MBAs cluster around $27k — far below the six-figure sticker prices that dominate headlines. ## Try it (30 seconds) ## FAQ **I'm shopping for a degree. How do I use this?** Filter by `level`, sort by `tuition_usd`, and open `source_url` to verify the price is current before you apply. Prices change; this is a snapshot from 2026-10-15. **What does `estimate: true` mean?** The school only publishes per-credit prices, so we multiplied by required credits. Treat it as a comparison, not a quote — the math is shown in `tuition_note`. **Why is this free?** It's open data (CC-BY-4.0). Cite \"Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence (aclas.si)\". ## Coverage | Level | Programs | |---|---| | Online MBA | 228 | | Online DBA | 38 | | Business bachelor's | 299 | | Online BSCS | 67 | | Online MCS | 108 | | **Total** | **740** | ## Columns"
+ },
+ {
+  "id": "online-degree-tuition-2026/README.md#2",
+  "source": "online-degree-tuition-2026/README.md",
+  "text": "`school`, `program`, `level` (mba/dba/bachelor/bscs/mcs), `tuition_usd` (total program tuition in USD), `tuition_note`, `estimate` (true = figure is an informed estimate, e.g. per-credit × required credits — see note below), `accreditation`, `format`, `source_url` (the official page the figure was taken from), `verified` (date last checked, 2026-10-15), `operator_owned` (TRUE = program is operated by ACLAS itself, the publisher of this dataset). ## Honest notes"
+ },
+ {
+  "id": "online-degree-tuition-2026/README.md#3",
+  "source": "online-degree-tuition-2026/README.md",
+  "text": "- `estimate: true` (587 rows, 79%) means the total is computed, not quoted — e.g. per-credit-hour price × program credits. The `tuition_note` explains the basis. Treat these as comparisons, not quotes. - **Disclosure:** 5 rows (`operator_owned: TRUE`) are programs operated by ACLAS itself — MBA $89, BBA $159, DBA $199, BSCS $199, MCS $299, sourced from aclas.edu.gr. They are included because the prices are real and verifiable, and flagged so you can exclude them from your own analysis. If you cite \"cheapest in category\" from this dataset, disclose this too. - Tuition changes; `verified` tells you how fresh each row is. Verify before citing a single figure for a current claim. - USD conversions use the rate at time of verification. ## License [CC-BY-4.0](LICENSE) — cite \"Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence (aclas.si)\"."
+ },
+ {
+  "id": "online-degree-tuition-2026/README.md#4",
+  "source": "online-degree-tuition-2026/README.md",
+  "text": "--- Published by the **Atlanta College of Liberal Arts and Sciences (ACLAS)** as part of [Study Intelligence](https://aclas.si), an open research program on AI and higher education. ## Citation"
+ },
+ {
+  "id": "online-degree-tuition-2026/llms.txt#0",
+  "source": "online-degree-tuition-2026/llms.txt",
+  "text": "# Online Degree Tuition 2026 > Open dataset: 740 online degree programs at 537 US institutions, tuition > verified against each university's official website. --- > By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) — https://aclas.si. License: CC-BY-4.0. > Snapshot: 2026-10-15. ## What question does this answer? What does an online degree actually cost in the US in 2026? Every figure traces to an official source URL. ## Coverage - Online MBA: 228 programs - Online DBA: 38 programs - Business bachelor's: 299 programs - Online BSCS: 67 programs - Online MCS: 108 programs ## Files - `online-degree-tuition-2026.csv` — 740 rows (UTF-8) - `online-degree-tuition-2026.json` — same data plus metadata - `CITATION.cff` — machine-readable citation ## Columns (CSV)"
+ },
+ {
+  "id": "online-degree-tuition-2026/llms.txt#1",
+  "source": "online-degree-tuition-2026/llms.txt",
+  "text": "`school`, `program`, `level` (mba / dba / bachelor / bscs / mcs), `tuition_usd` (total program tuition, USD), `tuition_note`, `estimate` (true = computed from per-credit x credits, not a quoted total), `accreditation`, `format`, `source_url`, `verified` (date checked). ## Caveats - 439 rows are estimates (per-credit x required credits); treat as comparisons, not quotes. Basis is in `tuition_note`. ## Citation Study Intelligence (https://aclas.si). \"Online Degree Tuition 2026\" (v1.0.0, 2026-10-15). CC-BY-4.0."
+ },
+ {
+  "id": "online-degree-tuition-2026/CHANGELOG.md#0",
+  "source": "online-degree-tuition-2026/CHANGELOG.md",
+  "text": "# Changelog ## v1.0.0 — 2026-10-18 - Initial open data release (CC-BY-4.0)."
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/README.md#0",
+  "source": "us-r1-ai-policy-audit-2026/README.md",
+  "text": "# US Carnegie R1 AI Policy Audit 2026 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college) An open dataset of **all 187 US Carnegie R1 research universities** (2025 Carnegie Classification), audited for whether each publishes official AI usage guidance/policy on its own domain. > **Also on Kaggle:** [aclascollege/us-r1-ai-policy-audit-2026](https://www.kaggle.com/datasets/aclascollege/us-r1-ai-policy-audit-2026) — download the CSV without git, or fork it straight into a notebook. ## In plain English **What is this?** A checklist for every single one of America's 187 top research universities (the \"R1\" list): *does it publish official rules for using AI?* We opened each school's own website to check. **The answer in one picture:**"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/README.md#1",
+  "source": "us-r1-ai-policy-audit-2026/README.md",
+  "text": "95% say yes. Exactly **one** school (University of Wyoming) confirmed it has no policy. The US research sector hasn't banned AI — it has *standardized* on governing it. ## Try it (30 seconds) ## FAQ **Why should I care?** If you study or teach at a US research university, there's a 95% chance your school already has AI rules — most students just don't know where they are. This tells you exactly where. **What does UNCLEAR mean?** We couldn't verify — usually dead links or login-walled pages. It does *not* mean the school has no policy. **How fresh is this?** Snapshot 2026-10-17. AI policies change fast; open the `policy_url` before quoting a row. ## Headline numbers"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/README.md#2",
+  "source": "us-r1-ai-policy-audit-2026/README.md",
+  "text": "- **178 of 187 (95.2%)** publish verifiable AI usage guidance — the US research sector has effectively standardized on governing AI, not banning it. - **1 confirmed NO:** University of Wyoming (no adopted policy; only a 2023 working-group draft). - **8 UNCLEAR** (could not verify — not proven absent): Brown, Clemson, UT Health San Antonio, UT Southwestern, UMass-Boston, Miami, UNH, Weill Cornell Medicine. Reasons per row in `note`. ## Files | File | Description | |---|---| | `us-r1-ai-policy-audit-2026.csv` / `.json` | 187 rows, one per R1 university | | `METHODOLOGY.md` | Definitions, verification rules, caveats | | `AUDIT-LOG.md` | List source, corrections, least-sure rows | | `raw/` | The 16 audited batch tables + 2 fix files (provenance) | | `parse.py` | Exact script that generated CSV/JSON from raw tables | ## Columns"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/README.md#3",
+  "source": "us-r1-ai-policy-audit-2026/README.md",
+  "text": "`id`, `university`, `official_domain`, `has_policy` (`YES`/`NO`/`UNCLEAR`), `policy_url` (opened and confirmed live on 2026-10-17), `page_title`, `date_info`, `scope` (students / faculty-teaching / all-community…), `note`. ## Notes - Snapshot date: **2026-10-17**. Policies change; verify before citing a row. - ~30 rows are \"soft YES\" (guidance-level vs formal policy, crawl-only confirmation, draft-labeled PDFs) — flagged in `AUDIT-LOG.md`. A wrong YES is worse than an UNCLEAR; treat soft YESes accordingly. - Corrections welcome via issues/PRs. ## License [CC-BY-4.0](LICENSE) — cite \"Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence (aclas.si)\". --- Published by the **Atlanta College of Liberal Arts and Sciences (ACLAS)** as part of [Study Intelligence](https://aclas.si), an open research program on AI and higher education. ## Citation"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/METHODOLOGY.md#0",
+  "source": "us-r1-ai-policy-audit-2026/METHODOLOGY.md",
+  "text": "# Methodology — US Carnegie R1 AI Policy Audit 2026 Audit date: **2026-10-17**. Snapshot, not a live registry. ## Universe All **187 institutions** in the 2025 Carnegie Classification R1 category (\"very high research activity\"), cross-checked against the Wikipedia \"List of research universities in the United States\" R1 table re-fetched on audit day: exact match, 0 missing / 0 extra. (The \"146\" figure sometimes cited is the 2021 Carnegie count.) ## What counts Same rules as the global audit (`../ai-policy-audit-2026/METHODOLOGY.md`):"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/METHODOLOGY.md#1",
+  "source": "us-r1-ai-policy-audit-2026/METHODOLOGY.md",
+  "text": "- **YES** = a page on the university's **own official domain** containing guidance/policy on AI use (students, teaching, research, or all-community). Generic academic-integrity pages that never mention AI do **not** count. Every YES URL was opened and confirmed live on 2026-10-17 (crawl-corroboration fallback transparently noted where used). - **NO** = adopted no AI policy after real searching (English). - **UNCLEAR** = could not verify (rate-blocked, portal-gated, third-party domain only, draft-only). Not proven absent. ## Caveats"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/METHODOLOGY.md#2",
+  "source": "us-r1-ai-policy-audit-2026/METHODOLOGY.md",
+  "text": "- ~30 \"soft YES\" rows are flagged in `AUDIT-LOG.md` (guidance-level documents, school-level scope, crawl-only confirmations, draft-labeled PDFs, one NetID-gated policy). Highest-risk: CUNY Graduate Center (\"Draft\" label), Kansas / Kansas State (guidance but \"no university-wide policy\" stated), WVU / WPI / Yale (crawl-only), MUSC (policy NetID-gated). - Two rows were corrected during the audit; provenance kept in `raw/us-r1-batch-10-fix.md` and `raw/us-r1-batch-13-fix.md`. ## Reproducibility `parse.py` generated CSV/JSON from `raw/` batch tables (fixes applied)."
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/llms.txt#0",
+  "source": "us-r1-ai-policy-audit-2026/llms.txt",
+  "text": "# US Carnegie R1 AI Policy Audit 2026 > Open dataset: all 187 US Carnegie R1 research universities (2025 Carnegie > Classification), audited for whether each publishes official AI usage > guidance on its own domain. --- > By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) — https://aclas.si. License: CC-BY-4.0. > Snapshot: 2026-10-17. ## What question does this answer? Has each US R1 university published official AI usage guidance or policy? Each YES was verified by opening the policy page on the university's own official domain. ## Key findings - 178 of 187 (95.2%) publish verifiable AI guidance. - 1 confirmed NO: University of Wyoming. - 8 UNCLEAR (could not verify, not proven absent): Brown, Clemson, UT Health San Antonio, UT Southwestern, UMass-Boston, Miami, UNH, Weill Cornell Medicine. - The US research sector has standardized on governing AI, not banning it. ## Files"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/llms.txt#1",
+  "source": "us-r1-ai-policy-audit-2026/llms.txt",
+  "text": "- `us-r1-ai-policy-audit-2026.csv` / `.json` — 187 rows, one per university - `METHODOLOGY.md` — definitions, verification rules, caveats - `AUDIT-LOG.md` — source list, corrections, least-sure rows - `raw/` — 16 audited batch tables + 2 fix files (provenance) - `parse.py` — exact script that generated CSV/JSON - `CITATION.cff` — machine-readable citation ## Columns (CSV) `id`, `university`, `official_domain`, `has_policy` (YES / NO / UNCLEAR), `policy_url` (confirmed live 2026-10-17), `page_title`, `date_info`, `scope` (students / faculty-teaching / all-community), `note`. ## Caveats - ~30 rows are \"soft YES\" (guidance-level vs formal policy, crawl-only confirmation) — flagged in `AUDIT-LOG.md`. - Snapshot 2026-10-17; policies change — verify before citing a row. ## Citation Study Intelligence (https://aclas.si). \"US Carnegie R1 AI Policy Audit 2026\" (v1.0.0, 2026-10-17). CC-BY-4.0."
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#0",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "# AUDIT LOG — US Carnegie R1 AI Policy Audit (2026-10-17) Auditor: Study Intelligence (aclas.si research). Audit date: **2026-10-17**. Methodology: `~/workspace/study-intelligence/datasets/ai-policy-audit-2026/METHODOLOGY.md` (same as the 187-school global audit) — English search, YES only when a page on the university's OWN official domain contains AI usage guidance/policy; NO only after real searching; UNCLEAR when unverifiable (dead links, portal-gated, rate-limited, etc.). A wrong YES is worse than an UNCLEAR. Raw tables: `raw/us-r1-batch-1.md` … `raw/us-r1-batch-16.md` (15 batches × 12 schools + final batch × 7 schools = 187 rows). ## R1 list source + coverage check"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#1",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "- Source: Wikipedia, \"List of research universities in the United States\", accessed and re-fetched **2026-10-17** (page header confirms \"187 institutions … as of the 2025 update\"). - The 2025 Carnegie update expanded R1 to **187 institutions**; the \"146\" figure was the pre-2025 (2021) count. All 187 were audited — no sampling. - Coverage validated programmatically on 2026-10-17: the 187 audited school names were extracted from the batch tables and compared (normalized) against the 187 names scraped from the Wikipedia R1 table the same day — **exact match: 0 missing, 0 extra, 0 duplicates**. The audit uses Carnegie's official institutional names verbatim (including campus qualifiers like \"Georgia Institute of Technology-Main Campus\"). ## Corrections applied (provenance)"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#2",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "1. **Batch 13, row 9 — wrong school audited.** The original worker audited the University of South Florida in the slot assigned to the University of North Carolina at Chapel Hill. A dedicated re-audit (2026-10-17) confirmed UNC Chapel Hill = YES (`https://curricula.unc.edu/required-syllabus-statements/`, Office of Undergraduate Curricula \"Artificial Intelligence (AI) Use Policy\", Spring 2026). Row 9 of `us-r1-batch-13.md` now carries the correct school and verdict; the correction is preserved in `raw/us-r1-batch-13-fix.md`. 2. **Batch 10 — two UNCLEAR rows upgraded to YES.** The first pass marked University of Central Florida and University of Colorado Boulder UNCLEAR because direct fetches were rate-limited. A dedicated re-check (2026-10-17) opened and confirmed both URLs (UCF: `https://aiforall.ucf.edu/students/ethical-use-of-ai/`; CU Boulder: `https://www.colorado.edu/center/teaching-learning/technology-ai/teaching-learning-ai/considerations-using-ai-teaching-and-learning`), so batc"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#3",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "h 10 is now 12/12 YES. Re-check documented in `raw/us-r1-batch-10-fix.md`. ## Headline results - **YES: 178 / NO: 1 / UNCLEAR: 8** (187 total) ## Schools that could not be classified (UNCLEAR, 8)"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#4",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "| School | Why | |---|---| | Brown University (batch 1) | brown.edu has a GAITL committee report (July 2026), sample AI syllabus statements, and an AI Policy Explorer — but Brown's own materials state university-wide baseline GenAI rules were still being drafted (GAITL Phase 2). No published institutional AI usage policy could be confirmed. | | Clemson University (batch 2) | The CCIT \"Generative AI Guidelines\" page exists with substantive student/instructor/research rules per search-engine crawl, but direct fetches were rate-blocked and an alternate page rendered empty. Not confirmed live → UNCLEAR. | | University of Massachusetts-Boston (batch 12) | Only a Writing Center-level AI policy found on umb.edu (defers to instructor policies); no university-wide policy after multiple searches. | | University of Miami (batch 12) | No university-wide policy after 4 searches; only program-level items (e.g. Business School graduate-admissions AI guidelines). | | University of New Hampshire-Main C"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#5",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "ampus (batch 13) | UNH IRB published \"Guidance for Research Involving Generative Artificial Intelligence\" (April 2026) and its Teaching & Learning hub references a USNH AI Standard per crawl — but no specific UNH policy page could be opened and confirmed. | | Weill Cornell Medicine (batch 16) | No AI use guidance on weill.cornell.edu (only an \"AI to Advance Medicine\" program announcement); the library's AI guide sits on third-party libguides.com. | | UT Health Science Center at San Antonio (batch 8) | An institutional AI policy (HOOP 5.9.10) exists but is hosted on powerdms.com, not uthscsa.edu; on the own domain only course-level AI mentions were found → UNCLEAR per the own-domain rule. | | UT Southwestern Medical Center (batch 8) | Public page (utsouthwestern.edu/ai/) confirms AI Responsible Usage guidelines exist, but they live behind VPN/intranet; the library AI guide is on third-party libguides.com → UNCLEAR per the portal-gating rule. |"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#6",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "Note: #7 and #9 in batch 8 (UT San Antonio / UT Health Science Center at San Antonio) are now one merged institution, but were audited on their separate assigned domains per the batch plan. ## The single NO - **University of Wyoming** (batch 15): three English searches found no adopted AI use policy on uwyo.edu — only a 2023 working-group recommendations report (draft syllabus language), library LibGuides, and AI commission/enterprise-platform news. A draft report is not an adopted policy → NO. ## Rows we're least sure about (soft YESes — guidance-level rather than formal policy, school-level scope, or crawl-only confirmation) Per the methodology's limitations section, school/department-level and guidance-style pages still qualify as YES, but these are the rows most likely to be debated on re-review:"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#7",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "- **Brandeis (b1)** — YES rests on the official AI Task Force page describing the \"AI Framework for Brandeis Students\"; the framework PDF itself 403'd to our fetch (corroborated via crawl of the official PDF). - **Baylor College of Medicine (b1)** — YES rests on the official 2026–2027 catalog PDF (§8.4 GenAI guidance, cdn.bcm.edu); the referenced \"BCM Institutional Guidelines\" appear intranet-only. - **Colorado State (b2)** — YES via the TILT \"AI and the CSU Student Conduct Code\" page (posted Jan 2023), an official student-facing interpretation; CSU's newer posture is in the AI@CSU hub. - **CUNY Graduate Center (b2)** — official PDF explicitly labeled \"Draft, June 5, 2026\". - **East Carolina (b3)** — YES rests on a library research guide with AI syllabus templates (guidance-level, adapted from Univ. of Delaware, hosted on ECU's domain). - **Georgia Tech (b3)** — YES rests on OIT's \"Academic Guidance for Generative AI\" (faculty/staff); the formal institute-wide policy was still in draft"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#8",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": " at audit time. - **Kansas State (b4)** — the official ARM guidance PDF couldn't be opened (429, retry prohibited); page text corroborated via search-engine crawl of the official PDF (methodology allows this fallback). - **MUSC (b4)** — policy text is NetID-gated; the verified musc.edu URL is a news-format milestones page documenting the \"Plagiarism and Artificial Intelligence Guidelines\" and the Jan 2024 governance policy rather than the guidelines themselves. - **Montana State (b5)** — two Center for Faculty Excellence AI URLs from the index 404'd (stale); confirmed instead via the Provost Office \"AI Resources\" hub (montana.edu/provost/faculty/AI.html). - **NYU (b5)** — school-level guidance only (Steinhardt AI Hub); countable per methodology but school-level. - **NDSU (b5)** — page states \"there are no standalone AI policies,\" but the university KB article (updated 2026-08-14) contains substantive university-wide guidance. - **Northeastern (b5)** — Research Compliance page failed at"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#9",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": " network level; confirmed via the official \"AI at Northeastern — A Student Guide\" PDF (learning.northeastern.edu). - **Nova Southeastern, Ohio University, RPI, Purdue (b6)** — all YES but noted by the worker as the batch's softest calls. - **SIU-Carbondale (b7)** — only a library LibGuide with faculty guidance found; no university-wide policy. - **Stony Brook (b7)** — CELT page frames itself as \"guidance, not policy\"; a stronger University Senate SCEDIT AI statement exists but its PDF couldn't be opened (rate-limited). - **Texas A&M (b7)** — grad-school-level guidance; campus-wide AI hub (ai.tamu.edu) guidance subpage 404'd, suggesting a recent site restructure. - **University at Albany (b9)** — teaching-design guidance on discouraging AI misuse rather than an explicit permitted/prohibited-use policy. - **Kansas (b11)** — page explicitly says KU has \"no university-wide policy specific to generative AI in teaching and learning,\" but is an official AI-hub page giving substantive student-"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#10",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "facing AI guidance. - **UGA (b11)** — CTL page 403'd on fetch; cited the Graduate School thesis/dissertation GenAI policy instead, with CTL default-rule evidence from search-engine crawl only. - **Louisville (b11)** — Delphi Center for Teaching and Learning guidance (faculty-teaching), not a formal policy statement. - **UMBC (b12)** — Provost post is public and substantive, but the full guidelines document sits behind my.UMBC files. - **Toledo (b14)** — YES rests on a verified College of Law-level policy; the Provost's university-level \"AI Policies\" page exists per search snippets but failed to load (network error). - **Penn (b14)** — grounded on the verified CETLI \"Generative AI Policies\" page (updated 2025-08-19); a central ISC community statement could not be confirmed at a verbatim URL. - **USC Columbia (b14)** — CTE guiding-principles page served on an artinstitute.sc.edu subdomain of sc.edu (linked from a www.sc.edu news announcement); date from the announcement. - **West Virgini"
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#11",
+  "source": "us-r1-ai-policy-audit-2026/AUDIT-LOG.md",
+  "text": "a University, Worcester Polytechnic Institute, Yale (b16)** — direct fetches failed (403 / resolver error / 429); verified via search-engine crawl of the official pages per the methodology's crawl-corroboration fallback; Yale's Provost guidelines page re-checks live (200, 2026-10-17). ## Operational notes - Browser rate limiting (429/403) was hit on several pages; workers used alternative URLs or the documented crawl-corroboration fallback rather than retrying blocked calls. Four 404s were stale-index artifacts (Montana State ×2, Stony Brook's old CELT aibot page, TAMU's ai.tamu.edu guidance subpage). - Table formatting: note/title cells escape embedded pipes as `\\|` (standard markdown), so naive pipe-splitting under-counts columns — real column count is 9 everywhere; validated with an escape-aware parser on 2026-10-17."
+ },
+ {
+  "id": "us-r1-ai-policy-audit-2026/CHANGELOG.md#0",
+  "source": "us-r1-ai-policy-audit-2026/CHANGELOG.md",
+  "text": "# Changelog ## v1.0.0 — 2026-10-18 - Initial open data release (CC-BY-4.0)."
+ },
+ {
+  "id": "academic-database-recognition-2026/README.md#0",
+  "source": "academic-database-recognition-2026/README.md",
+  "text": "# Online Institutions Across Academic Databases 2026 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college) [ ](https://doi.org/10.5281/zenodo.23445888) [ ](https://www.kaggle.com/datasets/aclascollege/academic-database-recognition-2026) [ ](https://huggingface.co/datasets/ACLASCollege/academic-database-recognition-2026) When a new online institution appears, which academic infrastructure databases recognize it — and how quickly? This audit checks **35 institutions** (stratified sample) against **4 academic databases**, documenting each database's inclusion bar. > **Also on Kaggle:** [aclascollege/academic-database-recognition-2026](https://www.kaggle.com/datasets/aclascollege/academic-database-recognition-2026) — download the CSV without git, or fork it straight into a notebook. ## In plain English"
+ },
+ {
+  "id": "academic-database-recognition-2026/README.md#1",
+  "source": "academic-database-recognition-2026/README.md",
+  "text": "**What is this?** A spreadsheet answering one question for 35 institutions: *which academic databases recognize this school?* We checked each institution against 4 databases — swot (JetBrains domain list), Wikidata, ROR, and OpenAlex — and recorded who says \"yes\". **Why does it matter?** New online universities face a \"recognition ladder\": they get listed first by community databases, then by curated ones. If you're evaluating an unfamiliar school, this shows you where it stands on that ladder — and how far it still has to climb. ## Headline findings"
+ },
+ {
+  "id": "academic-database-recognition-2026/README.md#2",
+  "source": "academic-database-recognition-2026/README.md",
+  "text": "- **Databases discriminate**: traditional elites average **2.8/4**, established online universities **2.6/4**, new alternatives **1.7/4**, documented diploma mills **0.8/4**. - **There is a recognition ladder**: new institutions are typically recognized first by swot (JetBrains, community-reviewed domain list — lowest barrier), then Wikidata (notability), then ROR (curated), then OpenAlex (ingests ROR upstream). - **ACLAS** (Atlanta College of Liberal Arts and Sciences) is on the **first rung**: recognized by JetBrains swot in October 2026 — ahead of EU-accredited Woolf University (founded 2018, 0/4) and Ubiquity University (0/4). ROR application in progress; OpenAlex follows ROR ingestion. - **Wikidata nuance**: 8 of 10 controversial institutions have Wikidata entries — documenting them *as frauds* (DOJ cases, AG suits). Wikidata presence signals notability, not legitimacy. - **Global census (v2)**: of 16,822 universities worldwide (Wikidata frame), 41% score 4/4, 34% score 3/4, 7% sc"
+ },
+ {
+  "id": "academic-database-recognition-2026/README.md#3",
+  "source": "academic-database-recognition-2026/README.md",
+  "text": "ore 2/4, 18% score 1/4. swot domain coverage: 47% globally (US 68%, India 21%). ## Try it (30 seconds) ## Files - `academic-database-recognition-2026.csv` — **v1 curated panel**: one row per institution: `id, name, country, tier, founded, website, domain`, per-database `in_swot / in_ror / in_openalex / in_wikidata` (0/1) with `*_id` / evidence URLs, `recognition_score` (n/4), `checked_date`, `notes`. - `global-recognition-census-2026.csv` — **v2 global census**: 16,822 universities worldwide (Wikidata frame) with `in_wikidata` (=1, frame), `in_ror` (Wikidata-recorded ROR ID, ~5% false-negative rate), `in_swot` (exact domain match, 26,914 swot domains), `in_openalex` (ROR-ID lookup via OpenAlex API; NULL if no ROR ID). - `METHODOLOGY.md` — audit method, tier definitions, matching rules, caveats. - `check.py` — verification script used during the audit. - `CITATION.cff` — machine-readable citation. ## Tiers"
+ },
+ {
+  "id": "academic-database-recognition-2026/README.md#4",
+  "source": "academic-database-recognition-2026/README.md",
+  "text": "- **A** — established online/distance universities (n=10) - **B** — new / alternative institutions (n=10) - **C** — controversial institutions, as contrast (n=10) - **D** — traditional elite baseline, methodology validation (n=5) ## Limitations - Exact-name matching is conservative: variant names may be missed (false negatives possible). - Snapshot 2026-10-18; databases update on their own cycles. - swot checks the registered domain; institutions without a known domain are marked absent there. - The v2 census builds on the Wikidata frame: institutions missing from Wikidata are missing from v2 by construction. ## Citation Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence. *Online Institutions Across Academic Databases 2026* (v1.0.0, 2026-10-18). CC-BY-4.0. DOI: [10.5281/zenodo.23445888](https://doi.org/10.5281/zenodo.23445888). See `CITATION.cff` for the machine-readable version. ---"
+ },
+ {
+  "id": "academic-database-recognition-2026/README.md#5",
+  "source": "academic-database-recognition-2026/README.md",
+  "text": "Published by the **Atlanta College of Liberal Arts and Sciences (ACLAS)** as part of [Study Intelligence](https://aclas.si), an open research program on AI and higher education."
+ },
+ {
+  "id": "academic-database-recognition-2026/llms.txt#0",
+  "source": "academic-database-recognition-2026/llms.txt",
+  "text": "# Online Institutions Across Academic Databases 2026 > Open dataset: 35 institutions checked against 4 academic infrastructure > databases (swot, Wikidata, ROR, OpenAlex) plus a 16,822-university global > census. By Study Intelligence, Atlanta College of Liberal Arts and Sciences > (ACLAS) (https://aclas.si). > License: CC-BY-4.0. Snapshot: 2026-10-18. DOI: 10.5281/zenodo.23445888. ## What question does this answer? When a new online institution appears, which academic infrastructure databases recognize it — and how quickly? Each of the 35 v1 institutions was checked directly against each database's own record system; the v2 census joins Wikidata, ROR, OpenAlex and swot at global scale. ## Key findings"
+ },
+ {
+  "id": "academic-database-recognition-2026/llms.txt#1",
+  "source": "academic-database-recognition-2026/llms.txt",
+  "text": "- Recognition forms a ladder: swot (community-reviewed domains, lowest bar) → Wikidata (notability) → ROR (curated) → OpenAlex (ingests ROR upstream). - Traditional elites average 2.8/4 databases, established online universities 2.6/4, new alternatives 1.7/4, documented diploma mills 0.8/4. - ACLAS sits on the first rung (swot-recognized, Oct 2026), ahead of EU-accredited Woolf University (founded 2018, 0/4). - Wikidata presence signals notability, not legitimacy: 8 of 10 controversial institutions have entries documenting them *as frauds*. - Global census: 41% of 16,822 universities score 4/4; swot domain coverage is 47% globally (US 68%, India 21%). ## Files"
+ },
+ {
+  "id": "academic-database-recognition-2026/llms.txt#2",
+  "source": "academic-database-recognition-2026/llms.txt",
+  "text": "- `academic-database-recognition-2026.csv` — v1 curated panel: 35 rows, per-database 0/1 flags with ids and evidence URLs, recognition_score (n/4), checked_date, notes - `global-recognition-census-2026.csv` — v2 global census: 16,822 rows (Wikidata frame) with in_wikidata / in_ror / in_swot / in_openalex - `METHODOLOGY.md` — audit method, tier definitions, matching rules, caveats - `check.py` — verification script used during the audit - `CITATION.cff` — machine-readable citation ## Columns (v1 CSV) `id`, `name`, `country`, `tier` (A/B/C/D), `founded`, `website`, `domain`, `in_swot` / `in_ror` / `in_openalex` / `in_wikidata` (0/1) with `*_id` and evidence URLs, `recognition_score` (n/4), `checked_date`, `notes`. ## Caveats"
+ },
+ {
+  "id": "academic-database-recognition-2026/llms.txt#3",
+  "source": "academic-database-recognition-2026/llms.txt",
+  "text": "- Exact-name matching is conservative: variant names may be missed (false negatives possible). - v2 builds on the Wikidata frame; institutions missing from Wikidata are missing from v2 by construction. ~5% false-negative rate on ROR via Wikidata-recorded ids. - Snapshot 2026-10-18; databases update on their own cycles. ## Citation Study Intelligence (https://aclas.si). \"Online Institutions Across Academic Databases 2026\" (v1.0.0, 2026-10-18). CC-BY-4.0. DOI: 10.5281/zenodo.23445888."
+ },
+ {
+  "id": "academic-database-recognition-2026/CHANGELOG.md#0",
+  "source": "academic-database-recognition-2026/CHANGELOG.md",
+  "text": "# Changelog ## v1.0.0 — 2026-10-18 - Initial open data release (CC-BY-4.0): v1 curated panel (35 institutions × 4 databases) + v2 global census (16,822 universities)."
+ }
+]

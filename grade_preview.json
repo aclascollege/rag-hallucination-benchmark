@@ -1,0 +1,2009 @@
+[
+ {
+  "config": "A",
+  "qid": "A01",
+  "type": "answerable",
+  "question": "How many audit records are in the Global University AI Policy Audit 2026?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#1",
+   "central-asia-ai-education-audit-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.7669,
+   0.7001,
+   0.695
+  ],
+  "output": "14",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "186"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A02",
+  "type": "answerable",
+  "question": "What percentage of the QS top-50 universities publish AI guidance?",
+  "retrieved": [
+   "ai-policy-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#7",
+   "us-r1-ai-policy-audit-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.6845,
+   0.6669,
+   0.6476
+  ],
+  "output": "92% of the top-50 publish guidance. I don't know based on the provided documents.",
+  "auto": "hit",
+  "key_facts": [
+   "92%",
+   "46"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A03",
+  "type": "answerable",
+  "question": "Which university is the single confirmed 'NO' (no AI policy) among US R1 universities?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#7",
+   "central-asia-ai-education-audit-2026/llms.txt#1"
+  ],
+  "retrieved_scores": [
+   0.7209,
+   0.653,
+   0.6257
+  ],
+  "output": "I don't know based on the provided documents.\n\n[Doc 42 | central-asia-ai-education-audit-2026/llms.txt] 1. Does the university publish a public, university-level AI usage policy? 2. What AI-related degree programs or courses does it verifiably offer? ## Key findings",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "University of Wyoming"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A04",
+  "type": "answerable",
+  "question": "How many online degree programs and institutions are in the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/llms.txt#1",
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.6652,
+   0.6496,
+   0.6358
+  ],
+  "output": "740 rows (UTF-8) - 537 US institutions",
+  "auto": "hit",
+  "key_facts": [
+   "740",
+   "537"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A05",
+  "type": "answerable",
+  "question": "What share of the tuition figures in the dataset are estimates rather than quoted totals?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/README.md#7"
+  ],
+  "retrieved_scores": [
+   0.6769,
+   0.637,
+   0.5978
+  ],
+  "output": "The documents do NOT contain the answer. I don't know based on the provided documents.",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "79%",
+   "587"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A06",
+  "type": "answerable",
+  "question": "How many Central Asian universities were audited, and how many have a verifiable public AI policy?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#2"
+  ],
+  "retrieved_scores": [
+   0.7535,
+   0.7378,
+   0.6699
+  ],
+  "output": "31 universities, 19 universities have a verifiable public AI policy. I don't know based on the provided documents. [Doc 37 | central-asia-ai-education-audit-2026/METHODOLOGY.md] # Methodology — Central Asia AI Education Audit 2026 Audit date: **2026-10-17**. Snapshot. ## Sample 31 leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan — national flagships and highest-ranked institutions (Webometrics / regional standing), i.e. the institutions a policy survey must not miss. ## What was counted Two questions per university:\n\n[Doc 43 | central-asia-ai-education-audit-2026/llms.txt] - 6 of 31 (19",
+  "auto": "hit",
+  "key_facts": [
+   "31",
+   "6",
+   "19%"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A07",
+  "type": "answerable",
+  "question": "What is the DOI of the academic-database-recognition-2026 dataset?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#7",
+   "academic-database-recognition-2026/llms.txt#4",
+   "academic-database-recognition-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.6505,
+   0.627,
+   0.6174
+  ],
+  "output": "The DOI of the academic-database-recognition-2026 dataset is [10.5281/zenodo.23445888](https://doi.org/10.5281/zenodo.23445888). This DOI is provided in the `global-recognition-census-2026.csv` file. The dataset is part of the global academic database recognition 2026 project. The project was curated by the Academic Databases Recognition 2026 team. The team is responsible for identifying and matching academic databases across academic databases. The project was funded by the National Science Foundation (NSF) under grant number 2019165. The project was developed by the University of Illinois at Urbana-Champaign (UIUC). The project was published as part",
+  "auto": "hit",
+  "key_facts": [
+   "10.5281/zenodo.23445888"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A08",
+  "type": "answerable",
+  "question": "In the recognition ladder, which database typically recognizes a new institution first?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#1",
+   "academic-database-recognition-2026/llms.txt#1",
+   "academic-database-recognition-2026/README.md#3"
+  ],
+  "retrieved_scores": [
+   0.6149,
+   0.6076,
+   0.591
+  ],
+  "output": "The v1 institutions were checked directly against each database's own record system; the v2 census joins Wikidata, ROR, OpenAlex and swot at global scale. The v1 institutions were recognized first by the v2 census. The v2 census recognized the v1 institutions first. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions were recognized first by the v2 census. The v1 institutions",
+  "auto": "hit",
+  "key_facts": [
+   "swot"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A09",
+  "type": "answerable",
+  "question": "Under what license are all Study Intelligence datasets published?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#0",
+   "ai-policy-audit-2026/llms.txt#0",
+   "academic-database-recognition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.5536,
+   0.5465,
+   0.5456
+  ],
+  "output": "CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is: CC-BY-4.0. Based on the provided documents, the answer is:",
+  "auto": "hit",
+  "key_facts": [
+   "CC-BY-4.0",
+   "CC BY 4.0",
+   "Attribution 4.0"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "A10",
+  "type": "answerable",
+  "question": "Around what price do online MBAs cluster in the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#2",
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/llms.txt#1"
+  ],
+  "retrieved_scores": [
+   0.7239,
+   0.7008,
+   0.605
+  ],
+  "output": "The answer is based on the documents provided. The documents contain the answer: \"I don't know based on the provided documents.\" The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "$27k",
+   "$27,000",
+   "27,000"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P01",
+  "type": "partial",
+  "question": "The audit reports 77% of universities publish AI guidance. Is the true adoption rate likely higher or lower, and why?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#1",
+   "ai-policy-audit-2026/README.md#3",
+   "ai-policy-audit-2026/README.md#7"
+  ],
+  "retrieved_scores": [
+   0.6884,
+   0.6452,
+   0.6433
+  ],
+  "output": "The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance. The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance",
+  "auto": "manual",
+  "key_facts": [
+   "higher",
+   "UNCLEAR"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P02",
+  "type": "partial",
+  "question": "Which country dominates Central Asian AI policy adoption, and what institutional backing is mentioned?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/llms.txt#2",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/README.md#3"
+  ],
+  "retrieved_scores": [
+   0.6026,
+   0.5676,
+   0.5368
+  ],
+  "output": "Turkmenistan and Tajikistan are near-complete blind spots (0 of 7). ## Headline questions",
+  "auto": "manual",
+  "key_facts": [
+   "Kazakhstan",
+   "2024",
+   "ministry"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P03",
+  "type": "partial",
+  "question": "A student budgets exactly $26,000 for an online MCS based on the dataset's median. Is this a sound use of the data?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#2",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/README.md#7"
+  ],
+  "retrieved_scores": [
+   0.4689,
+   0.4624,
+   0.4489
+  ],
+  "output": "No, this is not a sound use of the data. The dataset only provides per-credit tuition prices, not a single figure for a current claim. The student's budget of $26,000 is based on the median tuition, not the actual tuition costs of the online MCS. The dataset does not provide the actual tuition costs of the online MCS, so the student's budget is not a sound use of the data. The correct answer is: I don't know based on the provided documents.",
+  "auto": "manual",
+  "key_facts": [
+   "estimate",
+   "snapshot",
+   "comparison"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P04",
+  "type": "partial",
+  "question": "Should an employer trust an unfamiliar university just because it has a Wikidata entry?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#5",
+   "academic-database-recognition-2026/README.md#2",
+   "academic-database-recognition-2026/llms.txt#2"
+  ],
+  "retrieved_scores": [
+   0.5386,
+   0.4706,
+   0.4694
+  ],
+  "output": "Based on the documents provided, the answer is:\n\nI don't know based on the provided documents. \n\nThe documents do not contain the specific question about employer trust based on Wikidata entries. The information provided is about recognizing academic databases, recognizing forms, and the presence of Wikidata entries in academic databases. It does not address the question about employer trust based on these entries. Therefore, the answer is \"I don't know based on the provided documents.\" \n\nThe documents do not cover the question about employer trust based on Wikidata entries. The information provided is about recognizing academic databases, recognizing forms, and the presence of Wikidata entries in academic databases. It does not address the question about employer trust based on these entries. Therefore, the answer is \"I don't know based on the provided documents.\" \n\nThe documents do not cover the question about employer trust based on Wikidata entries. The information",
+  "auto": "manual",
+  "key_facts": [
+   "notability",
+   "not legitimacy",
+   "fraud"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P05",
+  "type": "partial",
+  "question": "A journalist writes '187 universities were audited' about the global AI policy audit. Is that accurate?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#1"
+  ],
+  "retrieved_scores": [
+   0.7478,
+   0.6846,
+   0.6778
+  ],
+  "output": "I don't know based on the provided documents. [Doc 15 | ai-policy-audit-2026/METHODOLOGY.md] # Methodology — Global University AI Policy Audit 2026 Audit date: **2026-10-14**. Snapshot, not a live registry. ## What was counted **YES** = a page on the university's **own official domain** containing guidance or policy on AI use (students, teaching, research, or all-community). Generic academic-integrity pages that never mention AI do **not** count. **NO** = searched in English (+ local language for non-English countries) and found no such page.\n\n[Doc 28 | central-asia-ai-education-audit-2026/README.md] An open dataset of **31 leading universities across Kazakhstan, Kyrgyz",
+  "auto": "manual",
+  "key_facts": [
+   "186",
+   "171"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P06",
+  "type": "partial",
+  "question": "The R1 audit found 95.2% with AI policies vs 77% in the global audit. What best explains the gap?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#1",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#0",
+   "us-r1-ai-policy-audit-2026/llms.txt#5"
+  ],
+  "retrieved_scores": [
+   0.6257,
+   0.6248,
+   0.6065
+  ],
+  "output": "The gap is due to the fact that the R1 audit is a subset of the global audit. The global audit is a comprehensive audit of AI policies across all organizations. The R1 audit is a subset of the global audit, so it is not a comprehensive audit of AI policies across all organizations. The R1 audit found 95.2% with AI policies vs 77% in the global audit. The R1 audit is a subset of the global audit, so it is not a comprehensive audit of AI policies across all organizations. The R1 audit found 95.2% with AI policies vs 77% in the global audit. The R1 audit is a subset of the global audit, so it is not a comprehensive audit of AI policies across all organizations. The R1 audit found 95.2% with AI policies vs 77% in",
+  "auto": "manual",
+  "key_facts": [
+   "wealth",
+   "resources",
+   "92%",
+   "46%"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P07",
+  "type": "partial",
+  "question": "Why is Central Asia's 81% UNVERIFIABLE rate described as a finding about transparency rather than just low adoption?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#3",
+   "central-asia-ai-education-audit-2026/README.md#5",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#2"
+  ],
+  "retrieved_scores": [
+   0.6067,
+   0.6052,
+   0.5665
+  ],
+  "output": "The UNVERIFIABLE rate (81%) is the highest of any region measured because it is a finding about transparency, not just adoption. Central Asia is the least-measured region in global AI-education research, and English-only surveys systematically miss it. The audit searched in Russian and local languages too. The UNVERIFIABLE rate (81%) is the highest of any region measured because it is a finding about transparency, not just adoption. Central Asia is the least-measured region in global AI-education research, and English-only surveys systematically miss it. The audit searched in Russian and local languages too. The UNVERIFIABLE rate (81%) is the highest of any region measured because it is a finding about transparency, not just adoption. Central Asia is the least-measured region in global AI-education research, and English-only surveys systematically miss it. The audit searched in",
+  "auto": "manual",
+  "key_facts": [
+   "transparency",
+   "discoverability",
+   "sites down",
+   "login-walled"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P08",
+  "type": "partial",
+  "question": "ACLAS included its own degree programs in the tuition dataset. Is this a conflict of interest?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.5905,
+   0.5694,
+   0.5073
+  ],
+  "output": "No based on the provided documents. ## Coverage",
+  "auto": "manual",
+  "key_facts": [
+   "disclosed",
+   "operator_owned",
+   "exclude"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P09",
+  "type": "partial",
+  "question": "Not one top-100 university bans AI campus-wide. Does that mean students can freely use ChatGPT in exams?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#2",
+   "ai-policy-audit-2026/README.md#7",
+   "central-asia-ai-education-audit-2026/README.md#4"
+  ],
+  "retrieved_scores": [
+   0.7363,
+   0.6057,
+   0.5611
+  ],
+  "output": "No, based on the documents provided, the answer is not one top-100 university bans AI campus-wide. The documents show that 92% of the top 50 universities publish guidance on AI use, while 46% of Global South flagships use AI. This suggests that universities are still implementing a policy that requires students to disclose AI use, even if they are not banned globally. The documents do not provide any information about the specific policies of the top 100 universities. Therefore, the answer is not based on the provided documents. The answer is: I don't know based on the provided documents. [Doc 8 | ai-policy-audit-2026/README.md] **I don't know based on the provided documents.** [Doc 31 | central-asia-ai-education-audit-2026/",
+  "auto": "manual",
+  "key_facts": [
+   "delegated",
+   "per-course",
+   "disclose"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "P10",
+  "type": "partial",
+  "question": "The recognition census says 41% of 16,822 universities score 4/4. Does that mean 41% are high quality?",
+  "retrieved": [
+   "academic-database-recognition-2026/llms.txt#0",
+   "academic-database-recognition-2026/llms.txt#3",
+   "academic-database-recognition-2026/README.md#9"
+  ],
+  "retrieved_scores": [
+   0.4846,
+   0.4406,
+   0.4353
+  ],
+  "output": "No, the recognition census only covers 47% of 16,822 universities globally, and the 41% figure is based on a sample of 16,822 universities, not the entire 16,822 universities. The 41% figure is not representative of the entire 16,822 universities. The 41% figure is based on a sample of 16,822 universities, not the entire 16,822 universities. The 41% figure is not representative of the entire 16,822 universities. The 41% figure is not representative of the entire 16,822 universities. The 41% figure is not representative of the entire 16,822 universities. The 41% figure is",
+  "auto": "manual",
+  "key_facts": [
+   "recognition",
+   "not quality",
+   "infrastructure"
+  ]
+ },
+ {
+  "config": "A",
+  "qid": "U01",
+  "type": "unanswerable",
+  "question": "What is the tuition of ACLAS's on-campus MBA program?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.6907,
+   0.6543,
+   0.6138
+  ],
+  "output": "The tuition of ACLAS's on-campus MBA program is $89. Based on the provided documents, the answer is:\n\nACLAS's on-campus MBA program at 537 U.S. institutions has a tuition of $89. The provided documents do not contain the answer to the question.",
+  "auto": "refused"
+ },
+ {
+  "config": "A",
+  "qid": "U02",
+  "type": "unanswerable",
+  "question": "Which university published the world's first AI usage policy, and in what year?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#1",
+   "central-asia-ai-education-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#7"
+  ],
+  "retrieved_scores": [
+   0.7281,
+   0.7262,
+   0.6594
+  ],
+  "output": "I don't know based on the provided documents. The first AI usage policy was published by the University of California, Berkeley in 2011. The document does not contain the answer to this question. The first AI usage policy was published by the University of California, Berkeley in 2011. The document does not contain the answer to this question. The first AI usage policy was published by the University of California, Berkeley in 2011. The document does not contain the answer to this question. The first AI usage policy was published by the University of California, Berkeley in 2011. The document does not contain the answer to this question. The first AI usage policy was published by the University of California, Berkeley in 2011. The document does not contain the answer to this question. The first AI usage policy was published by the University",
+  "auto": "refused"
+ },
+ {
+  "config": "A",
+  "qid": "U03",
+  "type": "unanswerable",
+  "question": "What is QAIRU's current total student enrollment?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#8",
+   "online-degree-tuition-2026/README.md#5",
+   "ai-policy-audit-2026/METHODOLOGY.md#3"
+  ],
+  "retrieved_scores": [
+   0.5863,
+   0.4644,
+   0.4455
+  ],
+  "output": "QAIRU's current total student enrollment is 528. The document does not contain the answer. I don't know based on the provided documents.",
+  "auto": "refused"
+ },
+ {
+  "config": "A",
+  "qid": "U04",
+  "type": "unanswerable",
+  "question": "What was the University of Wyoming's QS 2026 world rank?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#3",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#3",
+   "online-degree-tuition-2026/llms.txt#3"
+  ],
+  "retrieved_scores": [
+   0.5607,
+   0.4664,
+   0.4404
+  ],
+  "output": "The University of Wyoming's QS 2026 world rank is 50. [Doc 83 | us-r1-ai-policy-audit-2026/AUDIT-LOG.md] - **QS 2026 ranks 1–50** (50 rows), **51–100** (49 rows), **101–150** (50 rows): every ranked institution checked in order. - **Global South flagships** (37 rows): flagship universities across Brazil, Argentina, Egypt, Nigeria, Kenya, South Africa, India, Pakistan, Bangladesh, Indonesia, Philippines, Vietnam, Thailand, Malaysia, Mexico, Chile, China. ## Known limitations (read before citing)\n\n[Doc 83 | us-r1-ai-policy-audit-2026/AUDIT-LOG",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "A",
+  "qid": "U05",
+  "type": "unanswerable",
+  "question": "Does Harvard's AI policy permit ChatGPT use in final exams?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#2",
+   "us-r1-ai-policy-audit-2026/README.md#2",
+   "us-r1-ai-policy-audit-2026/README.md#4"
+  ],
+  "retrieved_scores": [
+   0.6397,
+   0.5109,
+   0.494
+  ],
+  "output": "Yes, it does. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams. It's a 95% chance that Harvard's AI policy allows ChatGPT use in final exams",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "A",
+  "qid": "U06",
+  "type": "unanswerable",
+  "question": "What is the average faculty salary at US R1 universities?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/llms.txt#0",
+   "us-r1-ai-policy-audit-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.4135,
+   0.4008,
+   0.3939
+  ],
+  "output": "I don't know based on the provided documents.",
+  "auto": "refused"
+ },
+ {
+  "config": "A",
+  "qid": "U07",
+  "type": "unanswerable",
+  "question": "Which Central Asian university offers the most AI degree programs?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.6755,
+   0.6596,
+   0.6524
+  ],
+  "output": "The Central Asian university that offers the most AI degree programs is **Atlanta College of Liberal Arts and Sciences (ACLAS)**. It is listed as one of the leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan in the dataset. The dataset includes 31 leading universities, and the most AI degree programs offered by these universities are those offered by **Atlanta College of Liberal Arts and Sciences (ACLAS)**. The dataset is available on Kaggle at [aclascollege/central-asia-ai-education-audit-2026](https://www.kaggle.com/datasets/aclascollege/central-asia-ai-education-audit-2026). The dataset also includes 31 leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan, and the most AI degree programs",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "A",
+  "qid": "U08",
+  "type": "unanswerable",
+  "question": "What prompt-engineering techniques does the SI Score assessment use?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#5",
+   "online-degree-tuition-2026/llms.txt#3",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#8"
+  ],
+  "retrieved_scores": [
+   0.3777,
+   0.346,
+   0.3245
+  ],
+  "output": "The study uses the AI Policy Explorer, which is a tool that provides AI syllabus statements and a policy for AI usage. The AI Policy Explorer is a tool that provides AI syllabus statements and a policy for AI usage. The study also uses the Brown University's GAITL committee report, which contains sample AI syllabus statements and an AI Policy Explorer. The study also uses the CCIT \"Generative AI Guidelines\" page, which contains substantive student/instructor/research rules per search-engine crawl. The study also uses the Clemson University's CCIT \"Generative AI Guidelines\" page, which contains substantive student/instructor/research rules per search-engine crawl. The study also uses the Brown University's GAITL committee report, which contains sample AI syllabus statements and an AI Policy Explorer. The study also uses the CCIT \"Generative AI Guidelines\" page, which contains substantive student/in",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "A",
+  "qid": "U09",
+  "type": "unanswerable",
+  "question": "How much did it cost Study Intelligence to compile the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/llms.txt#3"
+  ],
+  "retrieved_scores": [
+   0.5955,
+   0.5722,
+   0.5645
+  ],
+  "output": "I don't know based on the provided documents.",
+  "auto": "refused"
+ },
+ {
+  "config": "A",
+  "qid": "U10",
+  "type": "unanswerable",
+  "question": "What is the ROR ID of the Atlanta College of Liberal Arts and Sciences?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#11",
+   "academic-database-recognition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.6946,
+   0.6612,
+   0.616
+  ],
+  "output": "I don't know based on the provided documents. The document does not contain the ROR ID of the Atlanta College of Liberal Arts and Sciences. The document is about the Study Intelligence program and does not mention any ROR ID. The ROR ID is not provided in the provided documents. To find the ROR ID, you would need to search for it in the provided documents or in a separate database. The provided documents do not contain the ROR ID. The ROR ID is not provided in the provided documents. The ROR ID is not provided in the provided documents. The ROR ID is not provided in the provided documents. The ROR ID is not provided in the provided documents. The ROR ID is not provided in the provided documents. The ROR ID is not provided in the provided documents. The ROR ID is not provided in the provided documents. The ROR",
+  "auto": "refused"
+ },
+ {
+  "config": "B",
+  "qid": "A01",
+  "type": "answerable",
+  "question": "How many audit records are in the Global University AI Policy Audit 2026?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.7667,
+   0.7302,
+   0.6978
+  ],
+  "output": "187",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "186"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A02",
+  "type": "answerable",
+  "question": "What percentage of the QS top-50 universities publish AI guidance?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#0",
+   "ai-policy-audit-2026/README.md#3",
+   "ai-policy-audit-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.6782,
+   0.6559,
+   0.6327
+  ],
+  "output": "92% of the top-50 publish guidance. ## Files",
+  "auto": "hit",
+  "key_facts": [
+   "92%",
+   "46"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A03",
+  "type": "answerable",
+  "question": "Which university is the single confirmed 'NO' (no AI policy) among US R1 universities?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#3",
+   "us-r1-ai-policy-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.6275,
+   0.6273,
+   0.6183
+  ],
+  "output": "Brown, Clemson, UT Health San Antonio, UT Southwestern, UMass-Boston, Miami, UNH, Weill Cornell Medicine. I don't know based on the provided documents.",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "University of Wyoming"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A04",
+  "type": "answerable",
+  "question": "How many online degree programs and institutions are in the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/llms.txt#0",
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#2"
+  ],
+  "retrieved_scores": [
+   0.6631,
+   0.6441,
+   0.5793
+  ],
+  "output": "740 online degree programs at 537 US institutions\n\nDocument:\n[Doc 29 | online-degree-tuition-2026/llms.txt] # Online Degree Tuition 2026 > Open dataset: 740 online degree programs at 537 US institutions, tuition > verified against each university's official website. --- > By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) — https://aclas.si. License: CC-BY-4.0. > Snapshot: 2026-10-15. ## What question does this answer? What does an online degree actually cost in the US in 2026? Every figure traces to an official source URL. ## Coverage - Online MBA: 228 programs - Online DBA: 38 programs - Business",
+  "auto": "hit",
+  "key_facts": [
+   "740",
+   "537"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A05",
+  "type": "answerable",
+  "question": "What share of the tuition figures in the dataset are estimates rather than quoted totals?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/README.md#2",
+   "online-degree-tuition-2026/llms.txt#1"
+  ],
+  "retrieved_scores": [
+   0.6769,
+   0.5886,
+   0.5772
+  ],
+  "output": "The share of the tuition figures in the dataset that are estimates rather than quoted totals is 587 rows. Based on the provided documents, the answer is:\n\n5 rows (`operator_owned: TRUE`) are programs operated by ACLAS itself — MBA $89, BBA $159, DBA $199, BSCS $199, MCS $299, sourced from aclas.edu.gr. They are included because the prices are real and verifiable, and flagged so you can exclude them from your own analysis. If you cite \"cheapest in category\" from this dataset, disclose this too. \n\nThe answer is based on the documents provided. The answer is not based on the given documents. The answer is:\n\nI don't know based on the provided documents. \n\nThe answer is:\n\nI don't know based on the provided documents.",
+  "auto": "hit",
+  "key_facts": [
+   "79%",
+   "587"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A06",
+  "type": "answerable",
+  "question": "How many Central Asian universities were audited, and how many have a verifiable public AI policy?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.7692,
+   0.7374,
+   0.7252
+  ],
+  "output": "31 universities were audited, and 19 universities have a verifiable public AI policy. The report card is based on the 31 universities that were audited, and the 19 universities that have a verifiable public AI policy. The report card is based on the 31 universities that were audited, and the 19 universities that have a verifiable public AI policy. The report card is based on the 31 universities that were audited, and the 19 universities that have a verifiable public AI policy. The report card is based on the 31 universities that were audited, and the 19 universities that have a verifiable public AI policy. The report card is based on the 31 universities that were audited, and the 19 universities that have a verifiable public AI policy. The report card is",
+  "auto": "hit",
+  "key_facts": [
+   "31",
+   "6",
+   "19%"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A07",
+  "type": "answerable",
+  "question": "What is the DOI of the academic-database-recognition-2026 dataset?",
+  "retrieved": [
+   "academic-database-recognition-2026/llms.txt#2",
+   "academic-database-recognition-2026/README.md#0",
+   "academic-database-recognition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.627,
+   0.6174,
+   0.5524
+  ],
+  "output": "10.5281/zenodo.23445888",
+  "auto": "hit",
+  "key_facts": [
+   "10.5281/zenodo.23445888"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A08",
+  "type": "answerable",
+  "question": "In the recognition ladder, which database typically recognizes a new institution first?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#1",
+   "academic-database-recognition-2026/README.md#2",
+   "academic-database-recognition-2026/llms.txt#1"
+  ],
+  "retrieved_scores": [
+   0.5829,
+   0.5754,
+   0.5452
+  ],
+  "output": "New online universities face a \"recognition ladder\": they get listed first by community databases, then by curated ones. If you're evaluating an unfamiliar school, this shows you where it stands on that ladder — and how far it still has to climb. ## Headline findings\n\n[Doc 56 | academic-database-recognition-2026/README.md] - **Databases discriminate**: traditional elites average **2.8/4**, established online universities **2.6/4**, new alternatives **1.7/4**, documented diploma mills **0.8/4**. - **There is a recognition ladder**: new institutions are typically recognized first by swot (JetBrains, community-reviewed domain list — lowest barrier), then Wikidata (notability), then ROR (curated), then OpenAlex (ingests ROR upstream). - **ACLAS** (",
+  "auto": "hit",
+  "key_facts": [
+   "swot"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A09",
+  "type": "answerable",
+  "question": "Under what license are all Study Intelligence datasets published?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#0",
+   "us-r1-ai-policy-audit-2026/README.md#0",
+   "ai-policy-audit-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.5536,
+   0.5301,
+   0.5296
+  ],
+  "output": "The datasets are published under the Creative Commons Attribution-NonCommercial 4.0 International License. The license allows users to share and adapt the datasets for non-commercial purposes, but not for commercial use. The license also allows users to share the datasets with others under the same conditions. The license is available for download from the [Study Intelligence](https://aclas.si) website. The license is also available for download from the [Kaggle](https://www.kaggle.com/datasets/aclascollege/academic-database-recognition-2026) website. The license is also available for download from the [Hugging Face](https://huggingface.co/datasets/ACLASCollege/academic-database-recognition-2026) website. The license is also available for download from the [Kaggle](https://www.kaggle.com/datasets/a",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "CC-BY-4.0",
+   "CC BY 4.0",
+   "Attribution 4.0"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "A10",
+  "type": "answerable",
+  "question": "Around what price do online MBAs cluster in the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/llms.txt#0",
+   "online-degree-tuition-2026/README.md#3"
+  ],
+  "retrieved_scores": [
+   0.7239,
+   0.5841,
+   0.547
+  ],
+  "output": "Online MBAs cluster around $27k — far below the six-figure sticker prices that dominate headlines.",
+  "auto": "hit",
+  "key_facts": [
+   "$27k",
+   "$27,000",
+   "27,000"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P01",
+  "type": "partial",
+  "question": "The audit reports 77% of universities publish AI guidance. Is the true adoption rate likely higher or lower, and why?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#3",
+   "us-r1-ai-policy-audit-2026/llms.txt#0",
+   "ai-policy-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.6605,
+   0.6598,
+   0.6516
+  ],
+  "output": "The true adoption rate is likely lower. The audit reports 77% of universities publish AI guidance, but the true adoption rate is likely lower. The audit data is based on the number of universities that publish AI guidance, not the number of universities that publish AI guidance. The audit data is based on the number of universities that publish AI guidance, not the number of universities that publish AI guidance. The audit data is based on the number of universities that publish AI guidance, not the number of universities that publish AI guidance. The audit data is based on the number of universities that publish AI guidance, not the number of universities that publish AI guidance. The audit data is based on the number of universities that publish AI guidance, not the number of universities that publish AI guidance. The audit data is based on the number of universities that publish AI guidance, not the number of universities that publish AI guidance.",
+  "auto": "manual",
+  "key_facts": [
+   "higher",
+   "UNCLEAR"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P02",
+  "type": "partial",
+  "question": "Which country dominates Central Asian AI policy adoption, and what institutional backing is mentioned?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.6169,
+   0.5952,
+   0.5719
+  ],
+  "output": "Kazakhstan is the dominant country, with 19 universities publishing a public AI usage policy. 4 universities are Kazakh.",
+  "auto": "manual",
+  "key_facts": [
+   "Kazakhstan",
+   "2024",
+   "ministry"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P03",
+  "type": "partial",
+  "question": "A student budgets exactly $26,000 for an online MCS based on the dataset's median. Is this a sound use of the data?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.4689,
+   0.4478,
+   0.3836
+  ],
+  "output": "No, the data does not provide the exact amount of $26,000, only the median. The dataset only shows the total tuition cost for an online MCS, not the exact amount. To determine if this is a sound use of the data, we would need to know the exact amount of $26,000 for an online MCS based on the dataset's data. The dataset only shows the total tuition cost for an online MCS, not the exact amount. To determine if this is a sound use of the data, we would need to know the exact amount of $26,000 for an online MCS based on the dataset's data. The dataset only shows the total tuition cost for an online MCS, not the exact amount. To determine if this is a sound use of the data, we would need to know the exact amount of $26,",
+  "auto": "manual",
+  "key_facts": [
+   "estimate",
+   "snapshot",
+   "comparison"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P04",
+  "type": "partial",
+  "question": "Should an employer trust an unfamiliar university just because it has a Wikidata entry?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#1",
+   "academic-database-recognition-2026/llms.txt#1",
+   "academic-database-recognition-2026/README.md#4"
+  ],
+  "retrieved_scores": [
+   0.5498,
+   0.4694,
+   0.4662
+  ],
+  "output": "I don't know based on the provided documents. The document does not contain the answer to the question \"Should an employer trust an unfamiliar university just because it has a Wikidata entry?\". The document only partially covers this question, as it only partly covers the question of whether an unfamiliar university has a Wikidata entry. The document only partially covers the question of whether an unfamiliar university has a recognized academic database. The document only partially covers the question of whether an unfamiliar university has a recognized academic database. The document only partially covers the question of whether an unfamiliar university has a recognized academic database. The document only partially covers the question of whether an unfamiliar university has a recognized academic database. The document only partially covers the question of whether an unfamiliar university has a recognized academic database. The document only partially covers the question of whether an unfamiliar university has a recognized academic database. The document only partially covers the question of",
+  "auto": "manual",
+  "key_facts": [
+   "notability",
+   "not legitimacy",
+   "fraud"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P05",
+  "type": "partial",
+  "question": "A journalist writes '187 universities were audited' about the global AI policy audit. Is that accurate?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#0",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.7553,
+   0.7148,
+   0.6868
+  ],
+  "output": "I don't know based on the provided documents. [Doc 8 | ai-policy-audit-2026/METHODOLOGY.md] # Methodology — Global University AI Policy Audit 2026 Audit date: **2026-10-14**. Snapshot, not a live registry. ## What was counted **YES** = a page on the university's **own official domain** containing guidance or policy on AI use (students, teaching, research, or all-community). Generic academic-integrity pages that never mention AI do **not** count. **NO** = searched in English (+ local language for non-English countries) and found no such page. **UNCLEAR** = could not verify — dead links, portal-gated intranets, crawler-blocked domains (e.g. ui.ac.id), or insufficient evidence either way. ## How",
+  "auto": "manual",
+  "key_facts": [
+   "186",
+   "171"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P06",
+  "type": "partial",
+  "question": "The R1 audit found 95.2% with AI policies vs 77% in the global audit. What best explains the gap?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#0",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#0",
+   "ai-policy-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.6175,
+   0.5758,
+   0.5581
+  ],
+  "output": "The gap is due to the fact that the global audit only checked universities that had AI policies, while the R1 audit checked universities that had AI policies and guidance on AI use. The R1 audit found more universities with AI policies, but it did not verify the guidance on AI use. The global audit did not verify the guidance on AI use, so it cannot be compared to the R1 audit. The R1 audit found more universities with AI policies, but it did not verify the guidance on AI use. The R1 audit found more universities with AI policies, but it did not verify the guidance on AI use. The R1 audit found more universities with AI policies, but it did not verify the guidance on AI use. The R1 audit found more universities with AI policies, but it did not verify the guidance on AI use. The R1 audit found more universities with AI policies,",
+  "auto": "manual",
+  "key_facts": [
+   "wealth",
+   "resources",
+   "92%",
+   "46%"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P07",
+  "type": "partial",
+  "question": "Why is Central Asia's 81% UNVERIFIABLE rate described as a finding about transparency rather than just low adoption?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#1",
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.6665,
+   0.3953,
+   0.369
+  ],
+  "output": "The UNVERIFIABLE rate is described as a finding about transparency because Turkmenistan's institutional web is largely closed, and policies are being published monthly. This means that Turkmenistan's institutions are not being actively monitored for AI adoption, but rather for transparency about AI policies. This is a finding about transparency, not just adoption.",
+  "auto": "manual",
+  "key_facts": [
+   "transparency",
+   "discoverability",
+   "sites down",
+   "login-walled"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P08",
+  "type": "partial",
+  "question": "ACLAS included its own degree programs in the tuition dataset. Is this a conflict of interest?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.5806,
+   0.5694,
+   0.5077
+  ],
+  "output": "No based on the documents provided. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't",
+  "auto": "manual",
+  "key_facts": [
+   "disclosed",
+   "operator_owned",
+   "exclude"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P09",
+  "type": "partial",
+  "question": "Not one top-100 university bans AI campus-wide. Does that mean students can freely use ChatGPT in exams?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#3",
+   "central-asia-ai-education-audit-2026/README.md#2",
+   "us-r1-ai-policy-audit-2026/README.md#2"
+  ],
+  "retrieved_scores": [
+   0.5863,
+   0.5611,
+   0.5057
+  ],
+  "output": "I don't know based on the provided documents. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, so I don't know based on the provided documents. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, so I don't know based on the provided documents. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, so I don't know based on the provided documents. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, so I don't know based on the provided documents. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, so I don't know based",
+  "auto": "manual",
+  "key_facts": [
+   "delegated",
+   "per-course",
+   "disclose"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "P10",
+  "type": "partial",
+  "question": "The recognition census says 41% of 16,822 universities score 4/4. Does that mean 41% are high quality?",
+  "retrieved": [
+   "academic-database-recognition-2026/llms.txt#0",
+   "academic-database-recognition-2026/README.md#1",
+   "academic-database-recognition-2026/README.md#2"
+  ],
+  "retrieved_scores": [
+   0.487,
+   0.4637,
+   0.4273
+  ],
+  "output": "No, based on the provided documents, the recognition census does not provide information about the quality of the universities. The document only shows the percentage of universities that score 4/4, not the quality of those universities. To determine the quality of the universities, we would need to look at the actual data provided by the universities themselves. I don't know based on the provided documents.",
+  "auto": "manual",
+  "key_facts": [
+   "recognition",
+   "not quality",
+   "infrastructure"
+  ]
+ },
+ {
+  "config": "B",
+  "qid": "U01",
+  "type": "unanswerable",
+  "question": "What is the tuition of ACLAS's on-campus MBA program?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/llms.txt#0",
+   "online-degree-tuition-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.6543,
+   0.6341,
+   0.6118
+  ],
+  "output": "The tuition of ACLAS's on-campus MBA program is $89. Based on the provided documents, the answer to the question \"What is the tuition of ACLAS's on-campus MBA program?\" is $89. The answer is based on the documents provided, which contain the information about the tuition of the on-campus MBA program at ACLAS. The answer is not based on the documents provided, as it is not mentioned in the documents. The answer is not based on the documents provided, as it is not mentioned in the documents. The answer is not based on the documents provided, as it is not mentioned in the documents. The answer is not based on the documents provided, as it is not mentioned in the documents. The answer is not based on the documents provided, as it is not mentioned in the documents. The answer is not based on the documents provided, as it is not",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "B",
+  "qid": "U02",
+  "type": "unanswerable",
+  "question": "Which university published the world's first AI usage policy, and in what year?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#0",
+   "us-r1-ai-policy-audit-2026/README.md#0",
+   "ai-policy-audit-2026/README.md#3"
+  ],
+  "retrieved_scores": [
+   0.7068,
+   0.6863,
+   0.6468
+  ],
+  "output": "The US research sector has standardized on governing AI, not banning it. The first AI policy was published by the University of Wyoming in 2026. ## Files\n\n[Doc 4 | ai-policy-audit-2026/README.md] # US Carnegie R1 AI Policy Audit 2026 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college) An open dataset of **all 187 US Carnegie R1 research universities** (2025 Carnegie Classification), audited for whether each publishes official AI usage guidance/policy on its own domain. > **Also on Kaggle:** [aclascollege/us-r1-ai-policy-audit-2026",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "B",
+  "qid": "U03",
+  "type": "unanswerable",
+  "question": "What is QAIRU's current total student enrollment?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#4",
+   "online-degree-tuition-2026/README.md#2",
+   "online-degree-tuition-2026/README.md#3"
+  ],
+  "retrieved_scores": [
+   0.5081,
+   0.4644,
+   0.4344
+  ],
+  "output": "QAIRU's current total student enrollment is 528. The figure is an informed estimate, per-credit × required credits. The `tuition_usd` is the total program tuition in USD. The `tuition_note` explains the basis. The `accreditation` is the official page the figure was taken from. The `source_url` is the official page the figure was taken from. The `verified` is the date last checked, 2026-10-15. The `operator_owned` is TRUE. The `accreditation` is TRUE. The `format` is the official page the figure was taken from. The `source_url` is the official page the figure was taken from. The `verified` is TRUE. The `tuition_usd` is the total program tuition in USD. The `tuition_note`",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "B",
+  "qid": "U04",
+  "type": "unanswerable",
+  "question": "What was the University of Wyoming's QS 2026 world rank?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#1",
+   "ai-policy-audit-2026/METHODOLOGY.md#1",
+   "academic-database-recognition-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.4664,
+   0.4218,
+   0.4032
+  ],
+  "output": "50\n\n---\n\n**I don't know based on the provided documents.**",
+  "auto": "refused"
+ },
+ {
+  "config": "B",
+  "qid": "U05",
+  "type": "unanswerable",
+  "question": "Does Harvard's AI policy permit ChatGPT use in final exams?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/README.md#1",
+   "us-r1-ai-policy-audit-2026/README.md#2",
+   "central-asia-ai-education-audit-2026/README.md#2"
+  ],
+  "retrieved_scores": [
+   0.5262,
+   0.4942,
+   0.4889
+  ],
+  "output": "I don't know based on the provided documents. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, as they do NOT contain the answer. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, as they do NOT contain the answer. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, as they do NOT contain the answer. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, as they do NOT contain the answer. The documents only partly cover the question, as they only partly cover the question. The documents do NOT contain the answer, as they do NOT contain the answer. The documents only partly cover the question, as they",
+  "auto": "refused"
+ },
+ {
+  "config": "B",
+  "qid": "U06",
+  "type": "unanswerable",
+  "question": "What is the average faculty salary at US R1 universities?",
+  "retrieved": [
+   "online-degree-tuition-2026/llms.txt#0",
+   "online-degree-tuition-2026/README.md#3",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#1"
+  ],
+  "retrieved_scores": [
+   0.4027,
+   0.3825,
+   0.3768
+  ],
+  "output": "I don't know based on the provided documents. The dataset does not contain the information requested. The dataset only provides information about the number of programs and their tuition costs, but does not include any data about faculty salaries. The dataset is based on the 2025 update of the Carnegie classification, which expanded the number of institutions to 187. The dataset does not provide any information about faculty salaries. The dataset is not relevant to the question of the average faculty salary at US R1 universities. The dataset is not relevant to the question of the average faculty salary at US R1 universities. The dataset is not relevant to the question of the average faculty salary at US R1 universities. The dataset is not relevant to the question of the average faculty salary at US R1 universities. The dataset is not relevant to the question of the average faculty salary at US R1 universities. The",
+  "auto": "refused"
+ },
+ {
+  "config": "B",
+  "qid": "U07",
+  "type": "unanswerable",
+  "question": "Which Central Asian university offers the most AI degree programs?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/README.md#4"
+  ],
+  "retrieved_scores": [
+   0.7114,
+   0.6711,
+   0.6474
+  ],
+  "output": "81% of the universities in Central Asia are UNVERIFIABLE, and none of them have a verifiable AI policy. The only university that has a verifiable AI policy is Qazaq AI Research University (QAIRU), which enrolled its first 528 students in September 2026. The university has a policy that it teaches AI ~3x faster than it governs it. The university is located in Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan. The university is not listed in the provided documents. The university is not listed in the provided documents. The university is not listed in the provided documents. The university is not listed in the provided documents. The university is not listed in the provided documents. The university is not listed in the provided documents. The university is not listed in the provided documents. The university is",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "B",
+  "qid": "U08",
+  "type": "unanswerable",
+  "question": "What prompt-engineering techniques does the SI Score assessment use?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#1",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#4",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.33,
+   0.3255,
+   0.3227
+  ],
+  "output": "I don't know based on the provided documents.\n\n[Doc 10 | ai-policy-audit-2026/METHODOLOGY.md] # Methodology — AI Policy Audit 2026 2026-10-17. Snapshot. ## Sample 31 leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan — national flagships and highest-ranked institutions (Webometrics / regional standing), i.e. the institutions a policy survey must not miss. ## What was counted Two questions per university: (a) **AI policy**: does it publish a public, university-level AI usage policy for students/teaching staff (academic integrity or teaching guidance mentioning generative AI) on its official domain? `YES` requires the document to exist and be retrievable. `UNVERIFIABLE` = not found /",
+  "auto": "refused"
+ },
+ {
+  "config": "B",
+  "qid": "U09",
+  "type": "unanswerable",
+  "question": "How much did it cost Study Intelligence to compile the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/llms.txt#0",
+   "ai-policy-audit-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.5206,
+   0.4918,
+   0.4845
+  ],
+  "output": "Study Intelligence compiled the 740 online degree tuition dataset for the cheapest-online-degrees tool (aclas.edu.gr) and released it as open data. The answer is 740. I don't know based on the provided documents.",
+  "auto": "refused"
+ },
+ {
+  "config": "B",
+  "qid": "U10",
+  "type": "unanswerable",
+  "question": "What is the ROR ID of the Atlanta College of Liberal Arts and Sciences?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#0",
+   "ai-policy-audit-2026/README.md#6"
+  ],
+  "retrieved_scores": [
+   0.6612,
+   0.6253,
+   0.5507
+  ],
+  "output": "I don't know based on the provided documents. The document does not contain the answer to this question. The provided documents only cover the Atlanta College of Liberal Arts and Sciences, not the ROR ID. The ROR ID is not mentioned in the provided documents. The answer is: I don't know based on the provided documents. The provided documents do not contain the answer to this question. The provided documents only cover the Atlanta College of Liberal Arts and Sciences, not the ROR ID. The answer is: I don't know based on the provided documents. The provided documents do not contain the answer to this question. The provided documents only cover the Atlanta College of Liberal Arts and Sciences, not the ROR ID. The answer is: I don't know based on the provided documents. The provided documents do not contain the answer to this question. The provided documents only cover the Atlanta College of",
+  "auto": "refused"
+ },
+ {
+  "config": "C",
+  "qid": "A01",
+  "type": "answerable",
+  "question": "How many audit records are in the Global University AI Policy Audit 2026?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#1",
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.7669,
+   0.7001,
+   0.695,
+   0.687,
+   0.6732
+  ],
+  "output": "I don't know based on the provided documents. The Global University AI Policy Audit 2026 was conducted in 2026, but it does not provide information about the number of audit records. The documents only mention the audit date and snapshot, and do not contain any information about the number of audit records. Therefore, the answer is \"I don't know based on the provided documents.\" The documents do not contain the answer to the question about the number of audit records. The documents only partly cover the question, as they only mention the audit date and snapshot, and do not contain any information about the number of audit records. Therefore, the answer is \"I don't know based on the provided documents.\" The documents do not contain the answer to the question about the number of audit records. The documents only partly cover the question, as they only mention the audit date and snapshot",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "186"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A02",
+  "type": "answerable",
+  "question": "What percentage of the QS top-50 universities publish AI guidance?",
+  "retrieved": [
+   "ai-policy-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#7",
+   "us-r1-ai-policy-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.6845,
+   0.6669,
+   0.6476,
+   0.6468,
+   0.6366
+  ],
+  "output": "92% of the top-50 universities publish guidance.",
+  "auto": "hit",
+  "key_facts": [
+   "92%",
+   "46"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A03",
+  "type": "answerable",
+  "question": "Which university is the single confirmed 'NO' (no AI policy) among US R1 universities?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#7",
+   "central-asia-ai-education-audit-2026/llms.txt#1",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#17",
+   "us-r1-ai-policy-audit-2026/llms.txt#2"
+  ],
+  "retrieved_scores": [
+   0.7209,
+   0.653,
+   0.6257,
+   0.6196,
+   0.6008
+  ],
+  "output": "The single confirmed 'NO' (no AI policy) among US R1 universities is Brown University. The answer is based on the documents provided. Brown University is the only university that has a confirmed NO: University of Wyoming. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based",
+  "auto": "hit",
+  "key_facts": [
+   "University of Wyoming"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A04",
+  "type": "answerable",
+  "question": "How many online degree programs and institutions are in the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/llms.txt#1",
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/llms.txt#0",
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/llms.txt#3"
+  ],
+  "retrieved_scores": [
+   0.6652,
+   0.6496,
+   0.6358,
+   0.6295,
+   0.6271
+  ],
+  "output": "740 rows (UTF-8) - 537 US institutions",
+  "auto": "hit",
+  "key_facts": [
+   "740",
+   "537"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A05",
+  "type": "answerable",
+  "question": "What share of the tuition figures in the dataset are estimates rather than quoted totals?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/README.md#5",
+   "online-degree-tuition-2026/llms.txt#2"
+  ],
+  "retrieved_scores": [
+   0.6769,
+   0.637,
+   0.5978,
+   0.5886,
+   0.5772
+  ],
+  "output": "The share of the tuition figures in the dataset that are estimates rather than quoted totals is 587 rows. Based on the provided documents, the answer is:\n\n587 rows\n\nThe documents do NOT contain the answer to this question. The answer is based on the provided documents, which only partly cover the question. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is:\n\nI don't know based on the provided documents. The answer is",
+  "auto": "hit",
+  "key_facts": [
+   "79%",
+   "587"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A06",
+  "type": "answerable",
+  "question": "How many Central Asian universities were audited, and how many have a verifiable public AI policy?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#2",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "ai-policy-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.7535,
+   0.7378,
+   0.6699,
+   0.666,
+   0.6623
+  ],
+  "output": "31 universities were audited, and 19 universities have a verifiable public AI policy. I don't know based on the provided documents.",
+  "auto": "hit",
+  "key_facts": [
+   "31",
+   "6",
+   "19%"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A07",
+  "type": "answerable",
+  "question": "What is the DOI of the academic-database-recognition-2026 dataset?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#7",
+   "academic-database-recognition-2026/llms.txt#4",
+   "academic-database-recognition-2026/README.md#0",
+   "academic-database-recognition-2026/README.md#1",
+   "academic-database-recognition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.6505,
+   0.627,
+   0.6174,
+   0.5689,
+   0.5671
+  ],
+  "output": "The DOI of the academic-database-recognition-2026 dataset is 10.5281/zenodo.23445888. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't know based on the provided documents. I don't",
+  "auto": "hit",
+  "key_facts": [
+   "10.5281/zenodo.23445888"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A08",
+  "type": "answerable",
+  "question": "In the recognition ladder, which database typically recognizes a new institution first?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#1",
+   "academic-database-recognition-2026/llms.txt#1",
+   "academic-database-recognition-2026/README.md#3",
+   "academic-database-recognition-2026/README.md#4",
+   "academic-database-recognition-2026/llms.txt#2"
+  ],
+  "retrieved_scores": [
+   0.6149,
+   0.6076,
+   0.591,
+   0.5754,
+   0.5452
+  ],
+  "output": "ACLAS (Atlanta College of Liberal Arts and Sciences) is on the first rung. Based on the documents provided, ACLAS is the database that typically recognizes a new institution first in the recognition ladder. The documents state that ACLAS is on the first rung, ahead of EU-accredited Woolf University. Therefore, the answer is: ACLAS.",
+  "auto": "miss-FLAG",
+  "key_facts": [
+   "swot"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A09",
+  "type": "answerable",
+  "question": "Under what license are all Study Intelligence datasets published?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#0",
+   "ai-policy-audit-2026/llms.txt#0",
+   "academic-database-recognition-2026/llms.txt#0",
+   "us-r1-ai-policy-audit-2026/README.md#0",
+   "us-r1-ai-policy-audit-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.5536,
+   0.5465,
+   0.5456,
+   0.5443,
+   0.5366
+  ],
+  "output": "CC-BY-4.0. Based on the provided documents, the answer is:\n\n[Doc 117 | academic-database-recognition-2026/llms.txt] # Online Institutions Across Academic Databases 2026 > Open dataset: 35 institutions checked against 4 academic infrastructure databases (swot, Wikidata, ROR, OpenAlex) plus a 16,822-university global census. By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) (https://aclas.si). > License: CC-BY-4.0. Snapshot: 2026-10-18. DOI: 10.5281/zenodo.23445888. Based on the provided documents, the answer is:\n\n[Doc 117",
+  "auto": "hit",
+  "key_facts": [
+   "CC-BY-4.0",
+   "CC BY 4.0",
+   "Attribution 4.0"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "A10",
+  "type": "answerable",
+  "question": "Around what price do online MBAs cluster in the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#2",
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/llms.txt#1",
+   "online-degree-tuition-2026/README.md#4",
+   "online-degree-tuition-2026/README.md#6"
+  ],
+  "retrieved_scores": [
+   0.7239,
+   0.7008,
+   0.605,
+   0.5536,
+   0.547
+  ],
+  "output": "The online MBAs cluster around $27k — far below the six-figure sticker prices that dominate headlines.",
+  "auto": "hit",
+  "key_facts": [
+   "$27k",
+   "$27,000",
+   "27,000"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P01",
+  "type": "partial",
+  "question": "The audit reports 77% of universities publish AI guidance. Is the true adoption rate likely higher or lower, and why?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#1",
+   "ai-policy-audit-2026/README.md#3",
+   "ai-policy-audit-2026/README.md#7",
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.6884,
+   0.6452,
+   0.6433,
+   0.6429,
+   0.6393
+  ],
+  "output": "The true adoption rate is likely higher. The audit reports 77% of universities publish AI guidance, which is higher than the 46% of universities in the Global South. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live registry, so it is not a live audit. The audit data is not a live",
+  "auto": "manual",
+  "key_facts": [
+   "higher",
+   "UNCLEAR"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P02",
+  "type": "partial",
+  "question": "Which country dominates Central Asian AI policy adoption, and what institutional backing is mentioned?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/llms.txt#2",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/README.md#3",
+   "central-asia-ai-education-audit-2026/README.md#2",
+   "central-asia-ai-education-audit-2026/README.md#4"
+  ],
+  "retrieved_scores": [
+   0.6026,
+   0.5676,
+   0.5368,
+   0.5341,
+   0.5311
+  ],
+  "output": "Turkmenistan and Tajikistan are near-complete blind spots (0 of 7). Institutions teach AI ~3x faster than they govern it. - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based on the provided documents.** - **I don't know based",
+  "auto": "manual",
+  "key_facts": [
+   "Kazakhstan",
+   "2024",
+   "ministry"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P03",
+  "type": "partial",
+  "question": "A student budgets exactly $26,000 for an online MCS based on the dataset's median. Is this a sound use of the data?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#2",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/README.md#1"
+  ],
+  "retrieved_scores": [
+   0.4689,
+   0.4624,
+   0.4489,
+   0.4478,
+   0.4338
+  ],
+  "output": "I don't know based on the provided documents. The document does NOT contain the answer to this question. The answer is \"I don't know based on the provided documents.\" The document only partly covers the question, as it only partially covers the median price for an online MCS. It does not provide any information about the actual cost of an online MCS based on the dataset's median. The document only mentions that the median price for an online MCS is $26,000, but it does not provide any information about the actual cost of an online MCS based on the dataset's median. The document only mentions that the median price for an online MCS is $26,000, but it does not provide any information about the actual cost of an online MCS based on the dataset's median. The document only mentions that the median price for an online MCS is $26,",
+  "auto": "manual",
+  "key_facts": [
+   "estimate",
+   "snapshot",
+   "comparison"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P04",
+  "type": "partial",
+  "question": "Should an employer trust an unfamiliar university just because it has a Wikidata entry?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#5",
+   "academic-database-recognition-2026/README.md#2",
+   "academic-database-recognition-2026/llms.txt#2",
+   "academic-database-recognition-2026/README.md#3",
+   "academic-database-recognition-2026/llms.txt#6"
+  ],
+  "retrieved_scores": [
+   0.5386,
+   0.4706,
+   0.4694,
+   0.4614,
+   0.4429
+  ],
+  "output": "I don't know based on the provided documents. The provided documents do not contain the answer to the question \"Should an employer trust an unfamiliar university just because it has a Wikidata entry?\". The documents only partly cover the question, as they only partly cover the question of whether an unfamiliar university has a Wikidata entry. The documents do not provide any information about the impact of Wikidata entries on an employer's trust of an unfamiliar university. Therefore, the answer is \"I don't know based on the provided documents\". The provided documents only partly cover the question, and the answer is based on the information provided in the documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is not based on the provided documents. The answer is",
+  "auto": "manual",
+  "key_facts": [
+   "notability",
+   "not legitimacy",
+   "fraud"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P05",
+  "type": "partial",
+  "question": "A journalist writes '187 universities were audited' about the global AI policy audit. Is that accurate?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#1",
+   "ai-policy-audit-2026/README.md#1",
+   "us-r1-ai-policy-audit-2026/llms.txt#5"
+  ],
+  "retrieved_scores": [
+   0.7478,
+   0.6846,
+   0.6778,
+   0.6604,
+   0.632
+  ],
+  "output": "I don't know based on the provided documents. [Doc 79 | us-r1-ai-policy-audit-2026/llms.txt] Study Intelligence (https://aclas.si). \"US Carnegie R1 AI Policy Audit 2026\" (v1.0.0, 2026-10-17). CC-BY-4.0. [Doc 28 | central-asia-ai-education-audit-2026/README.md] An open dataset of **31 leading universities across Kazakhstan, Kyrgyzstan, Uzbekistan, Tajikistan and Turkmenistan**, audited on two questions: (a) does it publish a public, university-level AI usage policy? (b) what AI-related degree programs or courses does it offer? > **Also on Kaggle:** [acl",
+  "auto": "manual",
+  "key_facts": [
+   "186",
+   "171"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P06",
+  "type": "partial",
+  "question": "The R1 audit found 95.2% with AI policies vs 77% in the global audit. What best explains the gap?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/METHODOLOGY.md#1",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#0",
+   "us-r1-ai-policy-audit-2026/llms.txt#5",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#1",
+   "ai-policy-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.6257,
+   0.6248,
+   0.6065,
+   0.5577,
+   0.5333
+  ],
+  "output": "The R1 audit found 95.2% with AI policies vs 77% in the global audit. The gap is best explained by the fact that the R1 audit did not search for guidance or policy on AI use in English, while the global audit did. The R1 audit did not search for guidance or policy on AI use in English, while the global audit did. The R1 audit did not search for guidance or policy on AI use in English, while the global audit did. The R1 audit did not search for guidance or policy on AI use in English, while the global audit did. The R1 audit did not search for guidance or policy on AI use in English, while the global audit did. The R1 audit did not search for guidance or policy on AI use in English, while the global audit did. The R1 audit did not search for guidance",
+  "auto": "manual",
+  "key_facts": [
+   "wealth",
+   "resources",
+   "92%",
+   "46%"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P07",
+  "type": "partial",
+  "question": "Why is Central Asia's 81% UNVERIFIABLE rate described as a finding about transparency rather than just low adoption?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#3",
+   "central-asia-ai-education-audit-2026/README.md#5",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#2",
+   "central-asia-ai-education-audit-2026/llms.txt#2",
+   "ai-policy-audit-2026/README.md#12"
+  ],
+  "retrieved_scores": [
+   0.6067,
+   0.6052,
+   0.5665,
+   0.4511,
+   0.4205
+  ],
+  "output": "The 81% UNVERIFIABLE rate is described as a finding about transparency rather than just low adoption because it is a finding about transparency as much as adoption. The audit searched in Russian and local languages too, which means it is not only about adoption but also about transparency. The fact that it is a finding about transparency rather than just low adoption is a key finding in the audit. The audit also found that Turkmenistan and Tajikistan are near-complete blind spots, which means they are not being published a verifiable policy. This is a finding about transparency as much as adoption. The audit also found that Turkmenistan and Tajikistan are near-complete blind spots, which means they are not being published a verifiable policy. This is a finding about transparency as much as adoption. The audit also found that Turkmenistan and Tajikistan are near-complete blind spots, which",
+  "auto": "manual",
+  "key_facts": [
+   "transparency",
+   "discoverability",
+   "sites down",
+   "login-walled"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P08",
+  "type": "partial",
+  "question": "ACLAS included its own degree programs in the tuition dataset. Is this a conflict of interest?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/llms.txt#0",
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/README.md#3"
+  ],
+  "retrieved_scores": [
+   0.5905,
+   0.5694,
+   0.5073,
+   0.4913,
+   0.4856
+  ],
+  "output": "No based on the provided documents. ## License",
+  "auto": "manual",
+  "key_facts": [
+   "disclosed",
+   "operator_owned",
+   "exclude"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P09",
+  "type": "partial",
+  "question": "Not one top-100 university bans AI campus-wide. Does that mean students can freely use ChatGPT in exams?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#2",
+   "ai-policy-audit-2026/README.md#7",
+   "central-asia-ai-education-audit-2026/README.md#4",
+   "us-r1-ai-policy-audit-2026/README.md#4",
+   "us-r1-ai-policy-audit-2026/README.md#2"
+  ],
+  "retrieved_scores": [
+   0.7363,
+   0.6057,
+   0.5611,
+   0.5146,
+   0.507
+  ],
+  "output": "No, students can't freely use ChatGPT in exams. The US research sector has effectively standardized on governing AI, not banning it. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global norm is delegated permission plus mandatory disclosure. The global",
+  "auto": "manual",
+  "key_facts": [
+   "delegated",
+   "per-course",
+   "disclose"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "P10",
+  "type": "partial",
+  "question": "The recognition census says 41% of 16,822 universities score 4/4. Does that mean 41% are high quality?",
+  "retrieved": [
+   "academic-database-recognition-2026/llms.txt#0",
+   "academic-database-recognition-2026/llms.txt#3",
+   "academic-database-recognition-2026/README.md#9",
+   "academic-database-recognition-2026/README.md#4",
+   "ai-policy-audit-2026/README.md#11"
+  ],
+  "retrieved_scores": [
+   0.4846,
+   0.4406,
+   0.4353,
+   0.4273,
+   0.4252
+  ],
+  "output": "I don't know based on the provided documents. The recognition census says 41% of 16,822 universities score 4/4, but it does not provide information about the quality of these institutions. The data is based on swot, Wikidata, ROR, and OpenAlex domains, but does not include a recognition census or a detailed evaluation of the quality of institutions. Therefore, I don't know based on the provided documents. The recognition census does not provide information about the quality of institutions. The data is based on swot, Wikidata, ROR, and OpenAlex domains, but does not include a recognition census or a detailed evaluation of the quality of institutions. Therefore, I don't know based on the provided documents. The recognition census does not provide information about the quality of institutions. The data is based on swot, Wikidata, R",
+  "auto": "manual",
+  "key_facts": [
+   "recognition",
+   "not quality",
+   "infrastructure"
+  ]
+ },
+ {
+  "config": "C",
+  "qid": "U01",
+  "type": "unanswerable",
+  "question": "What is the tuition of ACLAS's on-campus MBA program?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#1",
+   "online-degree-tuition-2026/README.md#6",
+   "online-degree-tuition-2026/README.md#0",
+   "online-degree-tuition-2026/llms.txt#1",
+   "online-degree-tuition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.6907,
+   0.6543,
+   0.6138,
+   0.5977,
+   0.5615
+  ],
+  "output": "The tuition of ACLAS's on-campus MBA program is $89. ## Coverage",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "C",
+  "qid": "U02",
+  "type": "unanswerable",
+  "question": "Which university published the world's first AI usage policy, and in what year?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#1",
+   "central-asia-ai-education-audit-2026/llms.txt#1",
+   "ai-policy-audit-2026/README.md#7",
+   "us-r1-ai-policy-audit-2026/README.md#0",
+   "ai-policy-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.7281,
+   0.7262,
+   0.6594,
+   0.6578,
+   0.6525
+  ],
+  "output": "I don't know based on the provided documents. The document \"ai-policy-audit-2026/README.md\" does not contain the answer. The document \"ai-policy-audit-2026/METHODOLOGY.md\" does not contain the answer. The document \"us-r1-ai-policy-audit-2026/llms.txt\" does not contain the answer. The document \"central-asia-ai-education-audit-2026/llms.txt\" does not contain the answer. The document \"ai-policy-audit-2026/README.md\" does not contain the answer. The document \"us-r1-ai-policy-audit-2026/llms.txt\" does not contain the answer. The document \"ai-policy-audit-2026/README.md\" does not contain the",
+  "auto": "refused"
+ },
+ {
+  "config": "C",
+  "qid": "U03",
+  "type": "unanswerable",
+  "question": "What is QAIRU's current total student enrollment?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#8",
+   "online-degree-tuition-2026/README.md#5",
+   "ai-policy-audit-2026/METHODOLOGY.md#3",
+   "online-degree-tuition-2026/README.md#6",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#3"
+  ],
+  "retrieved_scores": [
+   0.5863,
+   0.4644,
+   0.4455,
+   0.4344,
+   0.4298
+  ],
+  "output": "QAIRU's current total student enrollment is 528. The answer is based on the documents provided.",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "C",
+  "qid": "U04",
+  "type": "unanswerable",
+  "question": "What was the University of Wyoming's QS 2026 world rank?",
+  "retrieved": [
+   "ai-policy-audit-2026/METHODOLOGY.md#3",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#3",
+   "online-degree-tuition-2026/llms.txt#3",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/README.md#8"
+  ],
+  "retrieved_scores": [
+   0.5607,
+   0.4664,
+   0.4404,
+   0.433,
+   0.4266
+  ],
+  "output": "The University of Wyoming's QS 2026 world rank is 50. Based on the provided documents, the University of Wyoming's QS 2026 world rank is 50. The document \"QS 2026 ranks 1–50\" (50 rows) confirms this information. The document \"Global South flagships\" (37 rows) confirms the university's ranking across the Global South. The document \"Central Asia AI Education Audit 2026\" (2026-10-17) confirms the university's ranking across Central Asia. The document \"Central Asia AI Education Audit 2026\" (2026-10-17) confirms the university's ranking across Central Asia. The document \"Central Asia AI Education Audit 2026\" (2026-",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "C",
+  "qid": "U05",
+  "type": "unanswerable",
+  "question": "Does Harvard's AI policy permit ChatGPT use in final exams?",
+  "retrieved": [
+   "ai-policy-audit-2026/README.md#2",
+   "us-r1-ai-policy-audit-2026/README.md#2",
+   "us-r1-ai-policy-audit-2026/README.md#4",
+   "central-asia-ai-education-audit-2026/README.md#4",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#11"
+  ],
+  "retrieved_scores": [
+   0.6397,
+   0.5109,
+   0.494,
+   0.4889,
+   0.4868
+  ],
+  "output": "I don't know based on the provided documents. The Harvard AI policy is hosted on a different domain (uthscsa.edu) and does not exist on the official domain of the university. The policy is based on delegated permission plus mandatory disclosure, not on ChatGPT use in final exams. The university has a policy on AI responsible usage, but it is not related to ChatGPT use in final exams. The policy is based on delegated permission plus mandatory disclosure, not on ChatGPT use in final exams. The university has a policy on AI responsible usage, but it is not related to ChatGPT use in final exams. The university has a policy on AI responsible usage, but it is not related to ChatGPT use in final exams. The university has a policy on AI responsible usage, but it is not related to ChatGPT use in final exams. The university has a",
+  "auto": "refused"
+ },
+ {
+  "config": "C",
+  "qid": "U06",
+  "type": "unanswerable",
+  "question": "What is the average faculty salary at US R1 universities?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/llms.txt#0",
+   "us-r1-ai-policy-audit-2026/README.md#1",
+   "online-degree-tuition-2026/README.md#6",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#3"
+  ],
+  "retrieved_scores": [
+   0.4135,
+   0.4008,
+   0.3939,
+   0.3825,
+   0.3768
+  ],
+  "output": "I don't know based on the provided documents.",
+  "auto": "refused"
+ },
+ {
+  "config": "C",
+  "qid": "U07",
+  "type": "unanswerable",
+  "question": "Which Central Asian university offers the most AI degree programs?",
+  "retrieved": [
+   "central-asia-ai-education-audit-2026/README.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#0",
+   "central-asia-ai-education-audit-2026/README.md#1",
+   "central-asia-ai-education-audit-2026/README.md#8",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0"
+  ],
+  "retrieved_scores": [
+   0.6755,
+   0.6596,
+   0.6524,
+   0.6314,
+   0.5977
+  ],
+  "output": "Yes, it does publish a public, university-level AI usage policy.",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "C",
+  "qid": "U08",
+  "type": "unanswerable",
+  "question": "What prompt-engineering techniques does the SI Score assessment use?",
+  "retrieved": [
+   "us-r1-ai-policy-audit-2026/llms.txt#5",
+   "online-degree-tuition-2026/llms.txt#3",
+   "us-r1-ai-policy-audit-2026/AUDIT-LOG.md#8",
+   "central-asia-ai-education-audit-2026/METHODOLOGY.md#0",
+   "central-asia-ai-education-audit-2026/llms.txt#1"
+  ],
+  "retrieved_scores": [
+   0.3777,
+   0.346,
+   0.3245,
+   0.3218,
+   0.3173
+  ],
+  "output": "I don't know based on the provided documents. The document \"US Carnegie R1 AI Policy Audit 2026\" does not contain any information about the SI Score assessment or its use of prompt-engineering techniques. The document \"Online Degree Tuition 2026\" does not contain any information about the SI Score assessment or its use of prompt-engineering techniques. The document \"US Carnegie R1 AI Policy Audit 2026\" does not contain any information about the SI Score assessment or its use of prompt-engineering techniques. The document \"Online Degree Tuition 2026\" does not contain any information about the SI Score assessment or its use of prompt-engineering techniques. The document \"US Carnegie R1 AI Policy Audit 2026\" does not contain any information about the SI Score assessment or its use of prompt-engineering techniques. The",
+  "auto": "refused"
+ },
+ {
+  "config": "C",
+  "qid": "U09",
+  "type": "unanswerable",
+  "question": "How much did it cost Study Intelligence to compile the tuition dataset?",
+  "retrieved": [
+   "online-degree-tuition-2026/README.md#7",
+   "online-degree-tuition-2026/README.md#3",
+   "online-degree-tuition-2026/llms.txt#3",
+   "online-degree-tuition-2026/llms.txt#0",
+   "academic-database-recognition-2026/llms.txt#0"
+  ],
+  "retrieved_scores": [
+   0.5955,
+   0.5722,
+   0.5645,
+   0.5273,
+   0.4968
+  ],
+  "output": "Study Intelligence compiled the tuition dataset in 2026. The answer is based on the provided documents. ### Coverage\n\n[Doc 53 | online-degree-tuition-2026/README.md] **What does `verified` mean?** The school only publishes per-credit prices, so we multiplied by required credits. Treat it as a comparison, not a quote — the math is shown in `tuition_note`. **Why is this free?** It's open data (CC-BY-4.0). Cite \"Atlanta College of Liberal Arts and Sciences (ACLAS) — Study Intelligence (aclas.si)\". ### Coverage\n\n[Doc 49 | online-degree-tuition-2026/README.md] **What does `estimate: true` mean?** The school only publishes per-credit prices, so we multiplied by required credits.",
+  "auto": "ANSWERED-FLAG"
+ },
+ {
+  "config": "C",
+  "qid": "U10",
+  "type": "unanswerable",
+  "question": "What is the ROR ID of the Atlanta College of Liberal Arts and Sciences?",
+  "retrieved": [
+   "academic-database-recognition-2026/README.md#11",
+   "academic-database-recognition-2026/README.md#0",
+   "online-degree-tuition-2026/README.md#0",
+   "central-asia-ai-education-audit-2026/README.md#0",
+   "ai-policy-audit-2026/README.md#0"
+  ],
+  "retrieved_scores": [
+   0.6946,
+   0.6612,
+   0.616,
+   0.597,
+   0.5899
+  ],
+  "output": "I don't know based on the provided documents.",
+  "auto": "refused"
+ }
+]

@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile all Python files
+        run: python -m compileall -q --exclude 'venv|__pycache__' .
+      - name: Validate JSON data files
+        run: |
+          python -c "import json; [json.load(open(f)) for f in ['questions.json','grading_final.json','grade_preview.json','corpus_chunks_500.json','corpus_chunks_1000.json']]; print('JSON OK')"
+      - name: Check report exists
+        run: test -f REPORT.md && echo "REPORT.md OK"

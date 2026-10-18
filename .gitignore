@@ -1,2 +1,5 @@
 models/
 *.gguf
+venv/
+__pycache__/
+bin/
